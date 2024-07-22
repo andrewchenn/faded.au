@@ -5,7 +5,7 @@ body{
     .mobileHeader{
         background-image: url(../images/mobilebackground.jpg);
         background-size: cover;
-        height: 780px;
+        height: 750px;
         .menu{
             position: fixed;
             display: flex;
@@ -29,6 +29,32 @@ body{
                 }
             }
         }
+        .mobileHeaderText{
+            margin: auto;
+            width: 70%;
+            padding-top: 450px;
+            color: white;
+            text-align: center;
+            button{
+                background: white;
+                border-color: #0000000D;
+                border-style: solid;
+                border: 1px;
+                padding: 8px 14px 8px 14px;
+                border-radius: 4px;
+                font-size: 12px;
+                font-weight: 600;
+                font-family: "League Spartan";
+                margin: 5px 5px 5px 5px;
+                .icon{
+                    margin-left: 10px;
+                }
+            }
+            button:hover{
+                cursor: pointer;
+                background: #F3F4F6;
+            }
+        }
     }
     .parallax{
         display: none;
@@ -38,5 +64,27 @@ body{
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+    }
+    .announcement{
+        height: 37px;
+        background-color:#dfd1b4;
+        .rightToLeft{
+            animation: RightToLeft 10s infinite linear;
+        }
+        @keyframes RightToLeft {
+            from{
+                transform: translateX(0%);
+            }
+            to{
+                transform: translateX(-50%);
+            }
+        }
+
+        h6{
+            font-size: 15px;
+            text-wrap: nowrap;
+            padding-top: 12px;
+            margin: 0;
+        }
     }
 }

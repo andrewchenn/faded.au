@@ -6,16 +6,12 @@ body {
 body .mobileHeader {
   background-image: url(../images/mobilebackground.jpg);
   background-size: cover;
-  height: 780px;
+  height: 750px;
 }
 body .mobileHeader .menu {
   position: fixed;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   background: black;
   height: 54px;
   width: 100%;
@@ -28,12 +24,37 @@ body .mobileHeader .menu .icon {
   margin: 15px;
 }
 body .mobileHeader .menu .logo img {
-  -ms-flex-item-align: center;
-      align-self: center;
+  align-self: center;
   width: 150px;
   height: 54px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+body .mobileHeader .mobileHeaderText {
+  margin: auto;
+  width: 70%;
+  padding-top: 450px;
+  color: white;
+  text-align: center;
+}
+body .mobileHeader .mobileHeaderText button {
+  background: white;
+  border-color: rgba(0, 0, 0, 0.0509803922);
+  border-style: solid;
+  border: 1px;
+  padding: 8px 14px 8px 14px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: "League Spartan";
+  margin: 5px 5px 5px 5px;
+}
+body .mobileHeader .mobileHeaderText button .icon {
+  margin-left: 10px;
+}
+body .mobileHeader .mobileHeaderText button:hover {
+  cursor: pointer;
+  background: #F3F4F6;
 }
 body .parallax {
   display: none;
@@ -43,4 +64,25 @@ body .parallax {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+body .announcement {
+  height: 37px;
+  background-color: #dfd1b4;
+}
+body .announcement .rightToLeft {
+  animation: RightToLeft 10s infinite linear;
+}
+@keyframes RightToLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+body .announcement h6 {
+  font-size: 15px;
+  text-wrap: nowrap;
+  padding-top: 12px;
+  margin: 0;
 }/*# sourceMappingURL=main.css.map */
