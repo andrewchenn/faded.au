@@ -66,9 +66,11 @@ body .parallax {
   background-size: cover;
 }
 body .announcement {
-  overflow: hidden;
   height: 37px;
   background-color: #dfd1b4;
+}
+body .announcement .overflow {
+  overflow: hidden;
 }
 body .announcement .rightToLeft {
   animation: RightToLeft 10s infinite linear;
