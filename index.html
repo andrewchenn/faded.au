@@ -12,9 +12,16 @@
 <body>
     <div class="mobileHeader">
           <div class="menu">
-            <div class="toggle icon"><i class="fa-solid fa-bars"></i></div>
+            <div class="toggle icon" onclick="showSidebar()"><i class="fa-solid fa-bars"></i></div>
             <div class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
             <div class="contact icon"><i class="fa-regular fa-message"></i></div>
+          </div>
+          <div class="mobileSidebar">
+            <button class="closeIcon" onclick="closeSidebar()"><i class="fa-solid fa-x"></i></button>
+            <button class="mobileSidebarAbout sidebarButton">About</button>
+            <button class="mobileSidebarPrices sidebarButton">Prices</button>
+            <button class="mobileSidebarContact sidebarButton">Contact</button>
+            <button class="mobileSidebarBookNow sidebarButton">Book Now</button>
           </div>
           <div class="mobileHeaderText">
             <h1>Trendy Styles. <br> Finest Quality.</h1>
@@ -34,5 +41,6 @@
             </div>
         </div>
     </div>
+    <script src="sidebar.js"></script>
 </body>
 </html>
