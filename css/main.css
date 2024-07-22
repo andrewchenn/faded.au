@@ -66,6 +66,7 @@ body .parallax {
   background-size: cover;
 }
 body .announcement {
+  overflow: hidden;
   height: 37px;
   background-color: #dfd1b4;
 }
