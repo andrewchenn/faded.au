@@ -1,0 +1,46 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan";
+}
+body .mobileHeader {
+  background-image: url(../images/mobilebackground.jpg);
+  background-size: cover;
+  height: 780px;
+}
+body .mobileHeader .menu {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background: black;
+  height: 54px;
+  width: 100%;
+}
+body .mobileHeader .menu i {
+  color: white;
+  font-size: 20px;
+}
+body .mobileHeader .menu .icon {
+  margin: 15px;
+}
+body .mobileHeader .menu .logo img {
+  -ms-flex-item-align: center;
+      align-self: center;
+  width: 150px;
+  height: 54px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .parallax {
+  display: none;
+  background-image: url(../images/background.jpg);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}/*# sourceMappingURL=main.css.map */
