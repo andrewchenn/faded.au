@@ -38,6 +38,7 @@ body .mobileHeader .mobileHeaderText {
   text-align: center;
 }
 body .mobileHeader .mobileHeaderText button {
+  color: black;
   background: white;
   border-color: rgba(0, 0, 0, 0.0509803922);
   border-style: solid;
