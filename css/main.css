@@ -39,7 +39,7 @@ body .mobileHeader .mobileSidebar {
   z-index: 999;
   overflow-x: hidden;
   display: flex;
-  background: rgba(13, 14, 15, 0.9);
+  background: rgba(13, 14, 15, 0.95);
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
   left: -100%;
   flex-direction: column;
@@ -61,11 +61,11 @@ body .mobileHeader .mobileSidebar .closeIcon {
   text-align: left;
   font-size: 20px;
   height: 54px;
-  width: 20px;
+  width: 40px;
 }
 body .mobileHeader .mobileSidebar .closeIcon .fa-x {
   display: fixed;
-  margin-left: 10px;
+  margin-left: 5px;
 }
 body .mobileHeader .mobileSidebar .closeIcon:hover {
   background: transparent;
@@ -132,4 +132,17 @@ body .announcement h6 {
   text-wrap: nowrap;
   padding-top: 12px;
   margin: 0;
+}
+body .about {
+  margin: 15px;
+}
+body .about .profile {
+  display: flex;
+}
+body .about .profile img {
+  width: 100px;
+  border-radius: 15px;
+}
+body .about .profile p {
+  margin: 10px;
 }/*# sourceMappingURL=main.css.map */
