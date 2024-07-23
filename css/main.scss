@@ -1,4 +1,5 @@
 body{
+    position: auto;
     overflow-y: auto;
     margin: 0;
     padding: 0;
@@ -8,6 +9,7 @@ body{
         background-size: cover;
         height: 750px;
         .menu{
+            z-index: 998;
             position: fixed;
             display: flex;
             justify-content: space-between;
@@ -110,6 +112,7 @@ body{
         background-size: cover;
     }
     .announcement{
+        z-index: 2;
         height: 37px;
         background-color:#dfd1b4;
         .overflow{
@@ -128,6 +131,7 @@ body{
         }
 
         h6{
+            z-index: 997;
             font-size: 15px;
             text-wrap: nowrap;
             padding-top: 12px;
@@ -135,15 +139,23 @@ body{
         }
     }
     .about{
-        margin: 15px;
+        margin: 20px;
         .profile{
             display: flex;
+            padding: 10px;
+            border: 1px solid lightgrey;
+            border-radius: 7px;
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
             img{
-                width: 100px;
-                border-radius: 15px;
+                width: 105px;
+                object-fit: cover;
+                border-radius: 10px;
             }
             p{
                 margin: 10px;
+            }
+            .tiktok{
+                box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
             }
         }
     }
