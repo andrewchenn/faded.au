@@ -1,12 +1,12 @@
 function showSidebar(){
     const sidebar = document.querySelector('.mobileSidebar');
-    sidebar.style.display = 'flex'
-    const menuButton = document.querySelector('.toggle')
-    ToggleEvent.style.display = 'none'
+    const menuButton = document.querySelector('.fa-bars')
+    sidebar.style.left = '0'
+    menuButton.style.color = 'black'
 }
 function closeSidebar(){
     const sidebar = document.querySelector('.mobileSidebar');
-    sidebar.style.display = 'none'
-    const closeButton = document.querySelector('.closeIcon')
-    ToggleEvent.style.display = 'none'
+    const closeButton = document.querySelector('.fa-bars')
+    sidebar.style.left = '-100%'
+    closeButton.style.color = 'white'
 }
