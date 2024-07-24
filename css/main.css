@@ -137,25 +137,33 @@ body .announcement h6 {
   padding-top: 12px;
   margin: 0;
 }
-body .about {
+body .discover {
   margin: 20px;
+  margin-top: 40px;
 }
-body .about .profile {
+body .discover .profile {
   display: flex;
   padding: 10px;
   border: 1px solid lightgrey;
   border-radius: 7px;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 2px 8px 0px;
+  margin-bottom: 40px;
 }
-body .about .profile img {
-  width: 105px;
+body .discover .profile img {
+  width: 120px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 10px;
 }
-body .about .profile p {
+body .discover .profile .profileText {
   margin: 10px;
 }
-body .about .profile .tiktok {
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+body .discover .profile .profileText h4 {
+  margin: 0px;
+}
+body .discover .profile .profileText p {
+  margin: 3px;
+}
+body .discover .tiktok h4 {
+  margin-bottom: 0px;
 }/*# sourceMappingURL=main.css.map */

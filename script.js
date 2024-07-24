@@ -14,3 +14,10 @@ function closeSidebar(){
     closeButton.style.color = 'white'
     body.style.overflowY = 'auto'
 }
+function discoverScroll() {
+    closeSidebar()
+    window.scroll({
+        top: 750,
+        behavior: 'smooth',
+    })
+  }
