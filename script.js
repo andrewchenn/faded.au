@@ -14,6 +14,14 @@ function closeSidebar(){
     closeButton.style.color = 'white'
     body.style.overflowY = 'auto'
 }
+function stopWhitespace(){
+    const menu = document.querySelector('.menu')
+    if (window.screenY>5) {
+        console.log(window.screenY)
+        menu.style.position = 'fixed'
+    }
+}
+stopWhitespace()
 function discoverScroll() {
     closeSidebar()
     window.scroll({
