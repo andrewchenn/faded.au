@@ -13,7 +13,7 @@ body .mobileHeader {
 }
 body .mobileHeader .menu {
   z-index: 998;
-  position: fixed;
+  position: relative;
   display: flex;
   justify-content: space-between;
   background: black;
@@ -85,7 +85,6 @@ body .mobileHeader .mobileHeaderText {
 }
 body .mobileHeader .mobileHeaderText button {
   color: black;
-  background: white;
   border-color: rgba(0, 0, 0, 0.0509803922);
   border-style: solid;
   border: 1px;
@@ -99,9 +98,15 @@ body .mobileHeader .mobileHeaderText button {
 body .mobileHeader .mobileHeaderText button .icon {
   margin-left: 10px;
 }
+body .mobileHeader .mobileHeaderText .bookNow {
+  background: #dfd1b4;
+}
 body .mobileHeader .mobileHeaderText button:hover {
   cursor: pointer;
   background: #F3F4F6;
+}
+body .mobileHeader .mobileHeaderText .bookNow:hover {
+  background: #b3a68e;
 }
 body .parallax {
   display: none;
@@ -141,10 +146,11 @@ body .announcement h6 {
 body .discover {
   margin: 20px;
   margin-top: 40px;
+  margin-bottom: 70px;
 }
 body .discover h2 {
-  margin-top: 10px;
-  margin-bottom: 10px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 body .discover .profile {
   display: flex;
@@ -164,15 +170,29 @@ body .discover .profile img {
 }
 body .discover .profile .profileText {
   margin: 10px;
+  width: 100%;
 }
 body .discover .profile .profileText h4 {
   margin-top: 0px;
   margin-bottom: 4px;
 }
-body .discover .profile .profileText p {
+body .discover .profile .profileText .typedtext {
   margin: 3px;
   padding-left: 3px;
 }
 body .discover .tiktok h4 {
   margin-bottom: -8px;
+}
+body .skew-cc {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  left: 0px;
+  background: linear-gradient(to right bottom, white 50%, black 51%), linear-gradient(-20deg, rgba(0, 0, 0, 0) 16px, rgba(0, 0, 0, 0) 0);
+}
+body .theMenu {
+  padding: 20px;
+  padding-top: 40px;
+  background-color: black;
+  color: white;
 }/*# sourceMappingURL=main.css.map */

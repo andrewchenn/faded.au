@@ -11,7 +11,7 @@ body{
         height: 750px;
         .menu{
             z-index: 998;
-            position: fixed;
+            position: relative;
             display: flex;
             justify-content: space-between;
             background: black;
@@ -83,7 +83,6 @@ body{
             text-align: center;
             button{
                 color: black;
-                background: white;
                 border-color: #0000000D;
                 border-style: solid;
                 border: 1px;
@@ -97,9 +96,15 @@ body{
                     margin-left: 10px;
                 }
             }
+            .bookNow{
+                background: #dfd1b4;
+            }
             button:hover{
                 cursor: pointer;
                 background: #F3F4F6;
+            }
+            .bookNow:hover{
+                background: #b3a68e;
             }
         }
     }
@@ -142,9 +147,10 @@ body{
     .discover{
         margin: 20px;
         margin-top: 40px;
+        margin-bottom: 70px;
         h2{
-            margin-top: 10px;
-            margin-bottom: 10px;
+            margin-top: 5px;
+            margin-bottom: 5px;
         }
         .profile{
             display: flex;
@@ -161,11 +167,12 @@ body{
             }
             .profileText{
                 margin: 10px;
+                width: 100%;
                 h4{
                     margin-top: 0px;
                     margin-bottom: 4px;
                 }
-                p{
+                .typedtext{
                     margin: 3px;
                     padding-left: 3px;
                 }
@@ -177,5 +184,18 @@ body{
                 margin-bottom: -8px;
             }
         }
+    }
+    .skew-cc{
+        width:100%;
+        height:60px;
+        position:relative;
+        left:0px;
+        background: linear-gradient(to right bottom, white 50%, black 51%),    linear-gradient(-20deg, rgba(0, 0, 0, 0) 16px, #00000000 0);
+      }
+    .theMenu{
+        padding: 20px;
+        padding-top: 40px;
+        background-color: black;
+        color: white;
     }
 }
