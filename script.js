@@ -25,10 +25,10 @@ function stopWhitespace(){
 };
 window.addEventListener('scroll', stopWhitespace);
 
-function discoverScroll() {
+function menuScroll(scroll) {
     closeSidebar()
     window.scroll({
-        top: 750,
+        top: scroll,
         behavior: 'smooth',
     })
   }
