@@ -14,6 +14,22 @@ function closeSidebar(){
     closeButton.style.color = 'white'
     body.style.overflowY = 'auto'
 }
+function showSidebarContact(){
+    const sidebar = document.querySelector('.mobileSidebarContact');
+    const body = document.querySelector('body')
+    const menuButton = document.querySelector('.fa-message')
+    sidebar.style.right = '0'
+    menuButton.style.color = 'black'
+    body.style.overflowY = 'hidden'
+}
+function closeSidebarContact(){
+    const sidebar = document.querySelector('.mobileSidebarContact');
+    const closeButton = document.querySelector('.fa-message')
+    const body = document.querySelector('body')
+    sidebar.style.right = '-100%'
+    closeButton.style.color = 'white'
+    body.style.overflowY = 'auto'
+}
 function stopWhitespace(){
     const menu = document.querySelector('.menu')
     if (window.scrollY > 5){

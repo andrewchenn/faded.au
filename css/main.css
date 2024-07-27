@@ -112,6 +112,68 @@ body .mobileHeader .mobileHeaderText button:hover {
 body .mobileHeader .mobileHeaderText .bookNow:hover {
   background: #b3a68e;
 }
+body .mobileSidebarContact {
+  color: white;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+  overflow-x: hidden;
+  display: flex;
+  right: -100%;
+  background: rgba(13, 14, 15, 0.95);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  flex-direction: column;
+  transition: 0.5s ease-in;
+}
+body .mobileSidebarContact .closeContainer {
+  height: 5%;
+}
+body .mobileSidebarContact .closeContainer .closeIcon {
+  float: right;
+  background: transparent;
+  color: white;
+  border: none;
+  text-align: right;
+  font-size: 20px;
+  height: 54px;
+  width: 40px;
+}
+body .mobileSidebarContact .closeContainer .closeIcon .fa-x {
+  display: fixed;
+  margin-right: 10px;
+}
+body .mobileSidebarContact .formContainer {
+  height: 70%;
+  margin: 20px;
+  border-radius: 10px;
+}
+body .mobileSidebarContact .formContainer .mobileContactForm {
+  margin: 30px;
+}
+body .mobileSidebarContact .formContainer .mobileContactForm input, body .mobileSidebarContact .formContainer .mobileContactForm select, body .mobileSidebarContact .formContainer .mobileContactForm textarea {
+  font-family: "League Spartan";
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: none;
+}
+body .mobileSidebarContact .formContainer .mobileContactForm input[type=submit] {
+  background-color: #dfd1b4;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body .mobileSidebarContact .formContainer .mobileContactForm input[type=submit]:hover {
+  background-color: #b3a68e;
+}
 body .parallax {
   display: none;
   background-image: url(../images/background.jpg);
