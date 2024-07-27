@@ -78,6 +78,7 @@ body .mobileHeader .mobileSidebar .sidebarButton {
 }
 body .mobileHeader .mobileHeaderText {
   position: absolute;
+  bottom: 17%;
   margin: auto;
   width: 70%;
   padding-top: 450px;
@@ -162,8 +163,8 @@ body .discover .profile {
 }
 body .discover .profile img {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 80px 80px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  margin-top: 5%;
-  margin-bottom: 5%;
+  margin-top: 15px;
+  margin-bottom: 15px;
   margin-right: 7px;
   width: 120px;
   max-height: 170px;

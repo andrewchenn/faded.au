@@ -35,7 +35,7 @@ function menuScroll(scroll) {
 
 // set up text to print, each item in array is new line
 var aText = new Array(
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex minus eveniet, fuga dignissimos nisi qui perferendis, ullam eaque aperiam incidunt tenetur asperiores non repellat. Fugit ullam molestias magnam cum voluptatem."
+    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex minus eveniet, fuga dignissimos nisi qui perferendis, ullam eaque aperiam incidunt tenetur asperiores non repellat."
     );
     var iSpeed = 500; // time delay of print out
     var iIndex = 0; // start printing array at this posision
