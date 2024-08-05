@@ -19,7 +19,7 @@ body .animate-bottom {
     opacity: 0;
   }
   to {
-    bottom: 110px;
+    bottom: 17%;
     opacity: 1;
   }
 }
