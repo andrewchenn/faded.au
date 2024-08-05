@@ -332,12 +332,12 @@ body{
           color: black;
         }
         
-        .button-17:active {
+        .theMenuBookNow:active {
           box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
           outline: none;
         }
         
-        .button-17:focus {
+        .theMenuBookNow:focus {
           outline: none;
           border: 2px solid #4285f4;
         }
@@ -350,9 +350,11 @@ body{
         background: linear-gradient(to left bottom, black 50%, #dfd1b4 51%),    linear-gradient(-20deg, rgba(0, 0, 0, 0) 16px, #00000000 0);
       }
     .booking{
+        min-height: 600px;
         padding: 20px;
         padding-top: 40px;
         background-color: #dfd1b4;
+        margin-bottom: -50px;
     }
     .skew-cccc{
         width:100%;

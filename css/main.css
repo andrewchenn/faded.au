@@ -327,11 +327,11 @@ body .theMenu .theMenuBookNow:hover {
   background: #ccc;
   color: black;
 }
-body .theMenu .button-17:active {
+body .theMenu .theMenuBookNow:active {
   box-shadow: 0 4px 4px 0 rgba(60, 64, 67, 0.3), 0 8px 12px 6px rgba(60, 64, 67, 0.15);
   outline: none;
 }
-body .theMenu .button-17:focus {
+body .theMenu .theMenuBookNow:focus {
   outline: none;
   border: 2px solid #4285f4;
 }
@@ -343,9 +343,11 @@ body .skew-ccc {
   background: linear-gradient(to left bottom, black 50%, #dfd1b4 51%), linear-gradient(-20deg, rgba(0, 0, 0, 0) 16px, rgba(0, 0, 0, 0) 0);
 }
 body .booking {
+  min-height: 600px;
   padding: 20px;
   padding-top: 40px;
   background-color: #dfd1b4;
+  margin-bottom: -50px;
 }
 body .skew-cccc {
   width: 100%;
