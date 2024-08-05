@@ -19,7 +19,9 @@ body #loading {
   z-index: 9999;
 }
 body #loading-image {
+  display: none;
   position: absolute;
+  height: 50px;
   top: 100px;
   left: 240px;
   z-index: 100;
