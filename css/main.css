@@ -15,11 +15,11 @@ body .animate-bottom {
 }
 @keyframes animatebottom {
   from {
-    bottom: -100px;
+    bottom: 0px;
     opacity: 0;
   }
   to {
-    bottom: 0;
+    bottom: 110px;
     opacity: 1;
   }
 }
