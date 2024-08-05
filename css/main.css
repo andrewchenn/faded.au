@@ -264,6 +264,7 @@ body .theMenu {
   background-color: black;
   color: white;
   text-align: center;
+  /* CSS */
 }
 body .theMenu p {
   font-style: italic;
@@ -273,20 +274,49 @@ body .theMenu h4 {
   margin-bottom: 10px;
 }
 body .theMenu .theMenuBookNow {
-  background: black;
-  font-size: 16px;
-  letter-spacing: 2px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: rgb(222, 222, 222);
+  align-items: center;
+  background-color: #fff;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px, rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
   cursor: pointer;
-  border: 3px solid;
-  padding: 0.25em 0.5em;
-  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+  font-family: "League Spartan";
+  display: inline-flex;
+  fill: currentcolor;
+  font-size: 14px;
+  font-weight: 500;
+  height: 48px;
+  justify-content: center;
+  letter-spacing: 0.25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
   position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+  -moz-user-select: none;
+       user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform, opacity;
+  z-index: 0;
 }
 body .theMenu .theMenuBookNow:hover {
-  color: #dfd1b4;
+  background: #ccc;
+  color: black;
+}
+body .theMenu .button-17:active {
+  box-shadow: 0 4px 4px 0 rgba(60, 64, 67, 0.3), 0 8px 12px 6px rgba(60, 64, 67, 0.15);
+  outline: none;
+}
+body .theMenu .button-17:focus {
+  outline: none;
+  border: 2px solid #4285f4;
 }
 body .skew-ccc {
   width: 100%;
@@ -312,4 +342,22 @@ body .footer {
   padding-top: 40px;
   color: #ccc;
   background: black;
+}
+body .footer h4 {
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+body .footer button {
+  background: transparent;
+  font-size: 17px;
+  font-weight: 550;
+  color: white;
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  margin-bottom: 10px;
+}
+body .footer button a {
+  text-decoration: none;
+  color: white;
 }/*# sourceMappingURL=main.css.map */
