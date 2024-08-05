@@ -299,30 +299,4 @@ body .booking {
   padding: 20px;
   padding-top: 40px;
   background-color: #dfd1b4;
-}
-body .booking .bookingForm {
-  margin: 30px;
-}
-body .booking .bookingForm input, body .booking .bookingForm select, body .booking .bookingForm textarea {
-  font-size: 16px;
-  font-family: "League Spartan";
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: none;
-}
-body .booking .bookingForm input[type=submit] {
-  background-color: #25282d;
-  color: white;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-body .booking .bookingForm input[type=submit]:hover {
-  background-color: black;
 }/*# sourceMappingURL=main.css.map */
