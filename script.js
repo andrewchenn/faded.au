@@ -1,3 +1,8 @@
+function loadScreen(){
+    const loadingScreen = document.getElementById("loading")
+    loadingScreen.style.display = 'none'
+}
+
 function showSidebar(){
     const sidebar = document.querySelector('.mobileSidebar');
     const body = document.querySelector('body')

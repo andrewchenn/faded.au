@@ -10,20 +10,23 @@
     <script src="https://kit.fontawesome.com/f127391619.js" crossorigin="anonymous"></script>
 </head>
 <body>
+    <div id="loading" class="loading">
+        <img id="loading-image" src="images/scissors.gif" alt="Loading..." />
+    </div>
     <div class="mobileHeader">
           <div class="menu">
             <div class="toggle icon" onclick="showSidebar()"><i class="fa-solid fa-bars"></i></div>
             <div class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
             <div class="contact icon" onclick="showSidebarContact()"><i class="fa-regular fa-message"></i></div>
           </div>
-          <div class="mobileSidebar">
+          <div class="mobileSidebar animate-bottom">
             <button class="closeIcon" onclick="closeSidebar()"><i class="fa-solid fa-x"></i></button>
             <button onclick="menuScroll(750)" class="mobileSidebarDiscover sidebarButton">Discover</button>
             <button onclick="menuScroll(1620)" class="mobileSidebarTheMenu sidebarButton">The Menu</button>
             <button onclick="closeSidebar(), showSidebarContact()" class="sidebarButton">Contact</button>
             <button onclick="menuScroll(2440)" class="mobileSidebarBookNow sidebarButton">Book Now</button>
           </div>
-          <div class="mobileHeaderText">
+          <div class="mobileHeaderText animate-bottom">
             <h1>Trendy Styles. <br> Finest Quality.</h1>
             <div class="mobileHeaderButtons">
                 <button onclick="menuScroll(750)">Discover<i class="icon fa-solid fa-arrow-down"></i></button>
@@ -122,5 +125,6 @@
         <p>© 2024 Chen. All Rights Reserved.</p>
     </div>
     <script src="script.js"></script>
+    
 </body>
 </html>
