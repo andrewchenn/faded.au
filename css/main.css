@@ -94,6 +94,15 @@ body .mobileHeader .mobileSidebar .closeIcon:hover {
 body .mobileHeader .mobileSidebar .sidebarButton {
   height: 100px;
 }
+body .mobileHeader .mobileSidebar .sidebarSocials {
+  align-self: baseline;
+  margin-top: 30dvh;
+}
+body .mobileHeader .mobileSidebar .sidebarSocials a {
+  color: white;
+  text-decoration: none;
+  background: transparent;
+}
 body .mobileHeader .mobileHeaderText {
   position: absolute;
   bottom: 17%;
@@ -193,6 +202,19 @@ body .mobileSidebarContact .formContainer .mobileContactForm input[type=submit] 
 }
 body .mobileSidebarContact .formContainer .mobileContactForm input[type=submit]:hover {
   background-color: #b3a68e;
+}
+body .mobileSidebarContact .sidebarSocials button {
+  font-family: "League Spartan";
+  font-size: 30px;
+  font-weight: 550;
+  color: white;
+  background-color: transparent;
+  border: none;
+  height: 40px;
+}
+body .mobileSidebarContact .sidebarSocials a {
+  text-decoration: none;
+  color: white;
 }
 body .parallax {
   display: none;

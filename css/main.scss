@@ -94,6 +94,15 @@ body{
             .sidebarButton{
                 height: 100px;
             }
+            .sidebarSocials{
+                align-self: baseline;
+                margin-top: 30dvh;
+                a{
+                    color: white;
+                    text-decoration: none;
+                    background: transparent;
+                }  
+            }
         }
         .mobileHeaderText{
             position: absolute;
@@ -193,6 +202,21 @@ body{
                 input[type=submit]:hover {
                     background-color: #b3a68e;
                   }
+            }
+        }
+        .sidebarSocials{
+            button{
+                font-family: "League Spartan";
+                font-size: 30px;
+                font-weight: 550;
+                color: white;
+                background-color: transparent;
+                border: none;
+                height: 40px;
+            }
+            a{
+                text-decoration: none;
+                color: white;
             }
         }
         
