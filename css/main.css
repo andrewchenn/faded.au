@@ -96,7 +96,7 @@ body .mobileHeader .mobileSidebar .sidebarButton {
 }
 body .mobileHeader .mobileSidebar .sidebarSocials {
   align-self: baseline;
-  margin-top: 30dvh;
+  margin-top: 10dvh;
 }
 body .mobileHeader .mobileSidebar .sidebarSocials a {
   color: white;
@@ -211,6 +211,7 @@ body .mobileSidebarContact .sidebarSocials button {
   background-color: transparent;
   border: none;
   height: 40px;
+  margin-top: 10dvh;
 }
 body .mobileSidebarContact .sidebarSocials a {
   text-decoration: none;
@@ -370,7 +371,13 @@ body .booking {
   padding: 20px;
   padding-top: 40px;
   background-color: #dfd1b4;
-  margin-bottom: -50px;
+}
+body .booking .container {
+  padding: 10px;
+  margin-bottom: -10px;
+  background-color: #b3a68e;
+  border-radius: 10px;
+  margin-bottom: 10px;
 }
 body .skew-cccc {
   width: 100%;

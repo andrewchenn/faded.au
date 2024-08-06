@@ -96,7 +96,7 @@ body{
             }
             .sidebarSocials{
                 align-self: baseline;
-                margin-top: 30dvh;
+                margin-top: 10dvh;
                 a{
                     color: white;
                     text-decoration: none;
@@ -213,6 +213,7 @@ body{
                 background-color: transparent;
                 border: none;
                 height: 40px;
+                margin-top: 10dvh;
             }
             a{
                 text-decoration: none;
@@ -379,7 +380,13 @@ body{
         padding: 20px;
         padding-top: 40px;
         background-color: #dfd1b4;
-        margin-bottom: -50px;
+        .container{
+            padding: 10px;
+            margin-bottom: -10px;
+            background-color: #b3a68e;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
     }
     .skew-cccc{
         width:100%;
