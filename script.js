@@ -8,7 +8,6 @@ function showSidebar(){
     const body = document.querySelector('body')
     const menuButton = document.querySelector('.fa-bars')
     sidebar.style.left = '0'
-    menuButton.style.color = 'black'
     body.style.overflowY = 'hidden'
 }
 function closeSidebar(){
@@ -16,7 +15,6 @@ function closeSidebar(){
     const closeButton = document.querySelector('.fa-bars')
     const body = document.querySelector('body')
     sidebar.style.left = '-100%'
-    closeButton.style.color = 'white'
     body.style.overflowY = 'auto'
 }
 function showSidebarContact(){
@@ -24,7 +22,6 @@ function showSidebarContact(){
     const body = document.querySelector('body')
     const menuButton = document.querySelector('.fa-message')
     sidebar.style.right = '0'
-    menuButton.style.color = 'black'
     body.style.overflowY = 'hidden'
 }
 function closeSidebarContact(){
@@ -32,16 +29,18 @@ function closeSidebarContact(){
     const closeButton = document.querySelector('.fa-message')
     const body = document.querySelector('body')
     sidebar.style.right = '-100%'
-    closeButton.style.color = 'white'
     body.style.overflowY = 'auto'
 }
 function stopWhitespace(){
     const menu = document.querySelector('.menu')
     if (window.scrollY > 5){
         menu.style.position = 'fixed'
+        menu.style.background = 'black'
     }
     else{
         menu.style.position = 'relative'
+        menu.style.background = 'rgba(0,0,0,0.3)'
+        menu.style.backdropFilter = "blur(5.5px)"
     }
 };
 window.addEventListener('scroll', stopWhitespace);
