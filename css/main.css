@@ -262,16 +262,42 @@
     margin-top: 40px;
     margin-bottom: 70px;
   }
-  body .discover h2 {
-    margin-top: 5px;
-    margin-bottom: 5px;
+  body .discover .discoverStatement {
+    height: 50%;
+    position: relative;
+    font-size: 45px;
+    text-align: right;
   }
-  body .discover .profile {
+  body .discover .discoverStatement .gradient {
+    text-decoration: none;
+    background: linear-gradient(to right, #102e03, #a7c687);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  body .discover .discoverStatement .chair {
+    font-size: 50px;
+  }
+  body .discover .discoverStatement img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(51, 50, 50, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    border: solid 3px rgba(76, 76, 76, 0.9);
+    position: absolute;
+    width: 50%;
+    max-height: 190px;
+    left: 10px;
+    top: 100px;
+  }
+  body .discover .profile h2 {
+    margin-bottom: 2px;
+  }
+  body .discover .profile .profileContainer {
     display: flex;
     padding: 10px;
     margin-bottom: 40px;
   }
-  body .discover .profile img {
+  body .discover .profile .profileContainer img {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 80px 80px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     margin-top: 15px;
     margin-bottom: 15px;
@@ -282,15 +308,15 @@
        object-fit: cover;
     border-radius: 10px;
   }
-  body .discover .profile .profileText {
+  body .discover .profile .profileContainer .profileText {
     margin: 10px;
     width: 100%;
   }
-  body .discover .profile .profileText h4 {
+  body .discover .profile .profileContainer .profileText h4 {
     margin-top: 0px;
     margin-bottom: 4px;
   }
-  body .discover .profile .profileText .typedtext {
+  body .discover .profile .profileContainer .profileText .typedtext {
     margin: 3px;
     padding-left: 3px;
   }
@@ -338,422 +364,6 @@
   }
   body .theMenu .theMenuBookNow {
     margin-top: 30px;
-    align-items: center;
-    background-color: #fff;
-    border-radius: 24px;
-    border-style: none;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px, rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
-    box-sizing: border-box;
-    color: #3c4043;
-    cursor: pointer;
-    font-family: "League Spartan";
-    display: inline-flex;
-    fill: currentcolor;
-    font-size: 14px;
-    font-weight: 500;
-    height: 48px;
-    justify-content: center;
-    letter-spacing: 0.25px;
-    line-height: normal;
-    max-width: 100%;
-    overflow: visible;
-    padding: 2px 24px;
-    position: relative;
-    text-align: center;
-    text-transform: none;
-    transition: box-shadow 280ms cubic-bezier(0.4, 0, 0.2, 1), opacity 15ms linear 30ms, transform 270ms cubic-bezier(0, 0, 0.2, 1) 0ms;
-    -moz-user-select: none;
-         user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: auto;
-    will-change: transform, opacity;
-    z-index: 0;
-  }
-  body .theMenu .theMenuBookNow:hover {
-    background: #ccc;
-    color: black;
-  }
-  body .theMenu .theMenuBookNow:active {
-    box-shadow: 0 4px 4px 0 rgba(60, 64, 67, 0.3), 0 8px 12px 6px rgba(60, 64, 67, 0.15);
-    outline: none;
-  }
-  body .theMenu .theMenuBookNow:focus {
-    outline: none;
-    border: 2px solid #4285f4;
-  }
-  body .skew-ccc {
-    width: 100%;
-    height: 60px;
-    position: relative;
-    left: 0px;
-    background: linear-gradient(to left bottom, black 50%, #dfd1b4 51%), linear-gradient(-20deg, rgba(0, 0, 0, 0) 16px, rgba(0, 0, 0, 0) 0);
-  }
-  body .booking {
-    min-height: 600px;
-    padding: 20px;
-    padding-top: 40px;
-    background-color: #dfd1b4;
-  }
-  body .booking .container {
-    padding: 10px;
-    margin-bottom: -10px;
-    background-color: #b3a68e;
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-  body .skew-cccc {
-    width: 100%;
-    height: 60px;
-    position: relative;
-    left: 0px;
-    background: linear-gradient(to right bottom, #dfd1b4 50%, black 51%), linear-gradient(-20deg, rgba(0, 0, 0, 0) 16px, rgba(0, 0, 0, 0) 0);
-  }
-  body .footer {
-    padding: 20px;
-    padding-top: 40px;
-    color: #ccc;
-    background: black;
-  }
-  body .footer h4 {
-    margin-bottom: 5px;
-    margin-left: 5px;
-  }
-  body .footer button {
-    background: transparent;
-    font-size: 17px;
-    font-weight: 550;
-    color: white;
-    background-color: transparent;
-    border: none;
-    height: 40px;
-    margin-bottom: 10px;
-  }
-  body .footer button a {
-    text-decoration: none;
-    color: white;
-  }
-}
-@media (min-width: 768px) {
-  body {
-    overscroll-behavior: none;
-    height: 100dvh;
-    position: auto;
-    overflow-y: auto;
-    margin: 0;
-    padding: 0;
-    font-family: "League Spartan";
-  }
-  body .animate-bottom {
-    position: relative;
-    -webkit-animation-name: animatebottom;
-    -webkit-animation-duration: 2s;
-    animation-name: animatebottom;
-    animation-duration: 2s;
-  }
-  @keyframes animatebottom {
-    from {
-      bottom: 0px;
-      opacity: 0;
-    }
-    to {
-      bottom: 17%;
-      opacity: 1;
-    }
-  }
-  body .mobileHeader {
-    background-image: url(../images/background.jpg);
-    background-color: black;
-    overflow: hidden;
-    background-size: cover;
-    height: 750px;
-  }
-  body .mobileHeader .menu {
-    z-index: 998;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    background: black;
-    height: 54px;
-    width: 100%;
-  }
-  body .mobileHeader .menu i {
-    color: white;
-    font-size: 20px;
-  }
-  body .mobileHeader .menu .icon {
-    margin: 15px;
-  }
-  body .mobileHeader .menu .logo img {
-    align-self: center;
-    width: 150px;
-    height: 54px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  body .mobileHeader .mobileSidebar {
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    width: 100%;
-    z-index: 999;
-    overflow-x: hidden;
-    display: flex;
-    background: black;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    left: -100%;
-    flex-direction: column;
-    transition: 0.5s ease-in;
-  }
-  body .mobileHeader .mobileSidebar button {
-    font-family: "League Spartan";
-    font-size: 30px;
-    font-weight: 550;
-    color: white;
-    background-color: transparent;
-    border: none;
-    height: 40px;
-  }
-  body .mobileHeader .mobileSidebar button:hover {
-    background: rgba(37, 40, 45, 0.9);
-  }
-  body .mobileHeader .mobileSidebar .closeIcon {
-    text-align: left;
-    font-size: 20px;
-    height: 54px;
-    width: 40px;
-  }
-  body .mobileHeader .mobileSidebar .closeIcon .fa-x {
-    display: fixed;
-    margin-left: 5px;
-  }
-  body .mobileHeader .mobileSidebar .closeIcon:hover {
-    background: transparent;
-  }
-  body .mobileHeader .mobileSidebar .sidebarButton {
-    height: 100px;
-  }
-  body .mobileHeader .mobileSidebar .sidebarSocials {
-    align-self: baseline;
-    margin-top: 10dvh;
-  }
-  body .mobileHeader .mobileSidebar .sidebarSocials a {
-    color: white;
-    text-decoration: none;
-    background: transparent;
-  }
-  body .mobileHeader .mobileHeaderText {
-    background-color: rgba(0, 0, 0, 0.5);
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: 30px;
-    color: white;
-    left: 0;
-    right: 0;
-    font-size: 30px;
-    text-align: center;
-  }
-  body .mobileHeader .mobileHeaderText button {
-    color: black;
-    border-color: rgba(0, 0, 0, 0.0509803922);
-    border-style: solid;
-    border: 1px;
-    padding: 8px 14px 8px 14px;
-    border-radius: 4px;
-    font-size: 16px;
-    font-weight: 600;
-    font-family: "League Spartan";
-    margin: 5px 5px 5px 5px;
-  }
-  body .mobileHeader .mobileHeaderText button .icon {
-    margin-left: 10px;
-  }
-  body .mobileHeader .mobileHeaderText .bookNow {
-    background: #dfd1b4;
-  }
-  body .mobileHeader .mobileHeaderText button:hover {
-    cursor: pointer;
-    background: #F3F4F6;
-  }
-  body .mobileHeader .mobileHeaderText .bookNow:hover {
-    background: #b3a68e;
-  }
-  body .mobileSidebarContact {
-    color: white;
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    width: 100%;
-    z-index: 999;
-    overflow-x: hidden;
-    display: flex;
-    right: -100%;
-    background: black;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    flex-direction: column;
-    transition: 0.5s ease-in;
-  }
-  body .mobileSidebarContact .closeContainer {
-    height: 5%;
-  }
-  body .mobileSidebarContact .closeContainer .closeIcon {
-    float: right;
-    background: transparent;
-    color: white;
-    border: none;
-    text-align: right;
-    font-size: 20px;
-    height: 54px;
-    width: 40px;
-    margin-right: 5px;
-  }
-  body .mobileSidebarContact .closeContainer .closeIcon .fa-x {
-    display: fixed;
-    margin-right: 5px;
-  }
-  body .mobileSidebarContact .formContainer {
-    height: 70%;
-    margin: 20px;
-    border-radius: 10px;
-  }
-  body .mobileSidebarContact .formContainer .mobileContactForm {
-    margin: 30px;
-  }
-  body .mobileSidebarContact .formContainer .mobileContactForm input, body .mobileSidebarContact .formContainer .mobileContactForm select, body .mobileSidebarContact .formContainer .mobileContactForm textarea {
-    font-size: 16px;
-    font-family: "League Spartan";
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: none;
-  }
-  body .mobileSidebarContact .formContainer .mobileContactForm input[type=submit] {
-    background-color: #dfd1b4;
-    color: black;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  body .mobileSidebarContact .formContainer .mobileContactForm input[type=submit]:hover {
-    background-color: #b3a68e;
-  }
-  body .mobileSidebarContact .sidebarSocials button {
-    font-family: "League Spartan";
-    font-size: 30px;
-    font-weight: 550;
-    color: white;
-    background-color: transparent;
-    border: none;
-    height: 40px;
-  }
-  body .mobileSidebarContact .sidebarSocials a {
-    text-decoration: none;
-    color: white;
-  }
-  body .parallax {
-    display: none;
-    background-image: url(../images/background.jpg);
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  body .announcement {
-    z-index: 2;
-    height: 37px;
-    background-color: #dfd1b4;
-  }
-  body .announcement .overflow {
-    overflow: hidden;
-  }
-  body .announcement .rightToLeft {
-    animation: RightToLeft 10s infinite linear;
-  }
-  @keyframes RightToLeft {
-    from {
-      transform: translateX(0%);
-    }
-    to {
-      transform: translateX(-50%);
-    }
-  }
-  body .announcement h6 {
-    z-index: 997;
-    font-size: 15px;
-    text-wrap: nowrap;
-    padding-top: 12px;
-    margin: 0;
-  }
-  body .discover {
-    margin: 20px;
-    margin-top: 40px;
-    margin-bottom: 70px;
-  }
-  body .discover h2 {
-    margin-top: 5px;
-    margin-bottom: 5px;
-  }
-  body .discover .profile {
-    display: flex;
-    padding: 10px;
-    margin-bottom: 40px;
-  }
-  body .discover .profile img {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 80px 80px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 7px;
-    width: 120px;
-    max-height: 170px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 10px;
-  }
-  body .discover .profile .profileText {
-    margin: 10px;
-    width: 100%;
-  }
-  body .discover .profile .profileText h4 {
-    margin-top: 0px;
-    margin-bottom: 4px;
-  }
-  body .discover .profile .profileText .typedtext {
-    margin: 3px;
-    padding-left: 3px;
-  }
-  body .discover .tiktok h4 {
-    margin-bottom: -8px;
-  }
-  body .skew-cc {
-    width: 100%;
-    height: 60px;
-    position: relative;
-    left: 0px;
-    background: linear-gradient(to right bottom, white 50%, black 51%), linear-gradient(-20deg, rgba(0, 0, 0, 0) 16px, rgba(0, 0, 0, 0) 0);
-  }
-  body .theMenu {
-    padding: 20px;
-    padding-top: 40px;
-    background-color: black;
-    color: white;
-    text-align: center;
-    /* CSS */
-  }
-  body .theMenu p {
-    font-style: italic;
-    margin-bottom: 40px;
-  }
-  body .theMenu h4 {
-    margin-bottom: 10px;
-  }
-  body .theMenu .theMenuBookNow {
     align-items: center;
     background-color: #fff;
     border-radius: 24px;
