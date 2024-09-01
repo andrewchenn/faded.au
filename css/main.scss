@@ -291,8 +291,20 @@
                 left: 10px;
                 top: 100px;
             }
+            a{
+                font-size: 14px;
+                font-weight: 850;
+                text-decoration: underline;
+                position: absolute;
+                right: 10px;
+                top: 260px;
+                i{
+                   text-decoration: underline; 
+                }
+            }
           }
           .profile{
+            position: relative;
             h2{
                 margin-bottom: 2px;
             }
@@ -344,12 +356,12 @@
           background-color: black;
           color: white;
           text-align: center;
-          p{
-              font-style: italic;
-              margin-bottom: 40px;
+          i{
+            font-size: 20px;
           }
           h4{
               margin-bottom: 10px;
+              font-weight: 500;
           }
           .scroll-container{
               white-space: nowrap;
@@ -431,11 +443,11 @@
           padding-top: 40px;
           background-color: #dfd1b4;
           .container{
-              padding: 10px;
-              margin-bottom: -10px;
-              background-color: #b3a68e;
-              border-radius: 10px;
-              margin-bottom: 10px;
+            padding: 10px;
+            margin-bottom: -10px;
+            background-color: #b3a68e;
+            border-radius: 10px;
+            margin-bottom: 10px;
           }
       }
       .skew-cccc{

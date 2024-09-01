@@ -289,6 +289,20 @@
     left: 10px;
     top: 100px;
   }
+  body .discover .discoverStatement a {
+    font-size: 14px;
+    font-weight: 850;
+    text-decoration: underline;
+    position: absolute;
+    right: 10px;
+    top: 260px;
+  }
+  body .discover .discoverStatement a i {
+    text-decoration: underline;
+  }
+  body .discover .profile {
+    position: relative;
+  }
   body .discover .profile h2 {
     margin-bottom: 2px;
   }
@@ -338,12 +352,12 @@
     text-align: center;
     /* CSS */
   }
-  body .theMenu p {
-    font-style: italic;
-    margin-bottom: 40px;
+  body .theMenu i {
+    font-size: 20px;
   }
   body .theMenu h4 {
     margin-bottom: 10px;
+    font-weight: 500;
   }
   body .theMenu .scroll-container {
     white-space: nowrap;
