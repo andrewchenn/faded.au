@@ -263,7 +263,7 @@
     margin-bottom: 70px;
   }
   body .discover .discoverStatement {
-    height: 50%;
+    height: 370px;
     position: relative;
     font-size: 45px;
     text-align: right;
@@ -299,9 +299,6 @@
   }
   body .discover .discoverStatement a i {
     text-decoration: underline;
-  }
-  body .discover .profile {
-    position: relative;
   }
   body .discover .profile h2 {
     margin-bottom: 2px;
