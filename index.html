@@ -6,8 +6,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
     <title>Faded by Shreyash</title>
     <script src="https://kit.fontawesome.com/f127391619.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 </head>
 <body>
     <div class="mobileHeader">
@@ -24,12 +26,12 @@
             <button onclick="closeSidebar(), setTimeout(() => {showSidebarContact()}, 250);" class="sidebarButton">Contact</button>
             <button onclick="menuScroll(2440)" class="mobileSidebarBookNow sidebarButton">Book Now</button>
             <center><div class="sidebarSocials">
-                <button class="instagram"><a href="https://www.instagram.com/andrewchen.n/"><i class="fa-brands fa-instagram"></i></a></button>
-                <button class="tiktok"> <a href="https://www.tiktok.com/@andrewchen.n"><i class="fa-brands fa-tiktok"></i></a></button>
+                <button class="instagram"><a href="https://www.instagram.com/faded.au/"><i class="fa-brands fa-instagram"></i></a></button>
+                <button class="tiktok"> <a href="https://www.tiktok.com/@shreyashh.k"><i class="fa-brands fa-tiktok"></i></a></button>
             </div></center>
           </div>
           <div class="mobileHeaderText animate-bottom">
-            <h1>Trendy Styles. <br> Finest Quality.</h1>
+            <img class="heroLogo" src="images/logo.png" alt="logo">
             <div class="mobileHeaderButtons">
                 <button onclick="menuScroll(750)">DISCOVER<i class="icon fa-solid fa-arrow-down"></i></button>
                 <button onclick="menuScroll(2440)" class="bookNow">BOOK NOW<i class="icon fa-regular fa-calendar"></i></button>
@@ -56,8 +58,8 @@
                 </form>
             </div>
             <center><div class="sidebarSocials">
-                <button class="instagram"><a href="https://www.instagram.com/andrewchen.n/"><i class="fa-brands fa-instagram"></i></a></button>
-                <button class="tiktok"> <a href="https://www.tiktok.com/@andrewchen.n"><i class="fa-brands fa-tiktok"></i></a></button>
+                <button class="instagram"><a href="https://www.instagram.com/faded.au/"><i class="fa-brands fa-instagram"></i></a></button>
+                <button class="tiktok"> <a href="https://www.tiktok.com/@shreyashh.k"><i class="fa-brands fa-tiktok"></i></a></button>
             </div></center>
           </div>
     </div>
@@ -73,17 +75,16 @@
     </div> 
     <div class="discover">
         <div class="discoverStatement">
-            <h2>STYLE <span class="gradient">BEYOND THE</span> <br><span class="chair">CHAIR</span></h2>
+            <h2>VISIONS TOWARDS <span class="gradient">REALITY</span></h2>
             <img src="images/beyondTheChair.png" alt="beyondTheChair">
             <a>SEE OUR WORK <i class="fa-solid fa-angle-down"></i></a>
         </div>
-        <div class="profile">
-            <center><h2>FACE OF FADED.AU</h2></center>
+        <div class="welcome">
+            <center><h2>WELCOME TO FADED BARBER STUDIO,</h2></center>
             <div class="profileContainer">
                 <div class="profileText">
-                    <div class="typedtext" id="typedtext"></div>
+                    <p>Chisholm’s flagship barbershop. Run by dedicated owner Shreyash to create a space where your vision becomes reality. <br><br>Before we arrived, barbering in the local area was overlooked with poor communication, outdated styles and rushed services. <br><br>Now, we aim to inspire change and elevate the craft. <br><br>Engaged with our community through active social media and content creation, Faded Barber Studio is the place where tradition meets innovation.</p>
                 </div>
-                <img src="images/profile.JPEG" alt="aboutProfle">
             </div>
         </div>
         <div class="tiktok">
@@ -93,37 +94,56 @@
         </div>
     </div>
     <div class="skew-cc"></div>
-    <div class="theMenu">
-        <center><h2>OUR WORK <i class="fa-solid fa-scissors"></i></h2></center>
-        <div class="theMenuSection">
-            <h4>TRADITIONAL FADED HAIRCUT</h4>
-            <center><div class="scroll-container">
-                <img src="images/fadesGallery/1.jpg" alt="">
-                <img src="images/fadesGallery/2.jpg" alt="">
-                <img src="images/fadesGallery/3.jpg" alt="">
-                <img src="images/fadesGallery/4.jpg" alt="">
-                <img src="images/fadesGallery/5.jpg" alt="">
-            </div></center>
-        </div>
-        <div class="theMenuSection">
-            <h4>+ BEARD TRIM</h4>
-            <center><div class="scroll-container">
-                <img src="images/fadesGallery/1.jpg" alt="">
-                <img src="images/fadesGallery/2.jpg" alt="">
-                <img src="images/fadesGallery/3.jpg" alt="">
-                <img src="images/fadesGallery/4.jpg" alt="">
-                <img src="images/fadesGallery/5.jpg" alt="">
-            </div></center>
-        </div>
-        <div class="theMenuSection">
-            <h4>SIGNATURE FADED DESIGNS</h4>
-            <center><div class="scroll-container">
-                <img src="images/fadesGallery/1.jpg" alt="">
-                <img src="images/fadesGallery/2.jpg" alt="">
-                <img src="images/fadesGallery/3.jpg" alt="">
-                <img src="images/fadesGallery/4.jpg" alt="">
-                <img src="images/fadesGallery/5.jpg" alt="">
-            </div></center>
+    <div class="testimonials">
+        <center><h2>OUR TESTIMONIALS</h2></center>
+        <!-- Slider main container -->
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="images/fadesGallery/1.jpg" alt="profile">
+                    <div class="review">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam rem corporis, qui quos dolorum aspernatur mollitia quasi doloremque maxime quidem voluptas voluptate suscipit asperiores? Ratione voluptates similique saepe laboriosam minima?</p>
+                    <h3>John Doe</h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="images/fadesGallery/2.jpg" alt="profile">
+                    <div class="review">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam rem corporis, qui quos dolorum aspernatur mollitia quasi doloremque maxime quidem voluptas voluptate suscipit asperiores? Ratione voluptates similique saepe laboriosam minima?</p>
+                    <h3>John Doe</h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="images/fadesGallery/3.jpg" alt="profile">
+                    <div class="review">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam rem corporis, qui quos dolorum aspernatur mollitia quasi doloremque maxime quidem voluptas voluptate suscipit asperiores? Ratione voluptates similique saepe laboriosam minima?</p>
+                    <h3>John Doe</h3>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="card">
+                    <img src="images/fadesGallery/4.jpg" alt="profile">
+                    <div class="review">
+                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam rem corporis, qui quos dolorum aspernatur mollitia quasi doloremque maxime quidem voluptas voluptate suscipit asperiores? Ratione voluptates similique saepe laboriosam minima?</p>
+                    <h3>John Doe</h3>
+                </div>
+            </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
         </div>
         <button onclick="menuScroll(2440)" class="theMenuBookNow">BOOK NOW</button>
     </div>
@@ -141,15 +161,34 @@
     <div class="footer">
         <h4>Elsewhere</h4>
         <div class="elsewhere-buttons-container">
-            <button class="instagram"><a href="https://www.instagram.com/andrewchen.n/"><i class="fa-brands fa-instagram"></i></a></button>
+            <button class="instagram"><a href="https://www.instagram.com/faded.au/"><i class="fa-brands fa-instagram"></i></a></button>
             <button class="facebook"><a href="https://www.facebook.com/andrewchen82"><i class="fa-brands fa-facebook"></i></a></button>
-            <button class="tiktok"> <a href="https://www.tiktok.com/@andrewchen.n"><i class="fa-brands fa-tiktok"></i></a></button>
+            <button class="tiktok"> <a href="https://www.tiktok.com/@shreyashh.k"><i class="fa-brands fa-tiktok"></i></a></button>
             <button class="linkedin"><a href="https://www.linkedin.com/in/andrewchenn/"><i class="fa-brands fa-linkedin"></i></a></button>
         </div>
         <hr>
         <p>© 2024 Chen. All Rights Reserved.</p>
     </div>
     <script src="script.js"></script>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>   
+  <!-- Initialize Swiper -->
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+        },
+        });
+    </script>
+    
     
 </body>
 </html>

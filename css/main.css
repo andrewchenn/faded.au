@@ -35,9 +35,6 @@
     top: 0;
     display: flex;
     justify-content: space-between;
-    background: rgba(0, 0, 0, 0.3);
-    -webkit-backdrop-filter: blur(5.5px);
-            backdrop-filter: blur(5.5px);
     height: 54px;
     width: 100%;
   }
@@ -113,10 +110,17 @@
     margin: auto;
     width: 70%;
     padding-top: 450px;
-    color: white;
     left: 0;
     right: 0;
     text-align: center;
+  }
+  body .mobileHeader .mobileHeaderText .heroLogo {
+    height: 250px;
+    width: 250px;
+    margin-bottom: 50px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 2200px;
   }
   body .mobileHeader .mobileHeaderText button {
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
@@ -274,9 +278,6 @@
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
   }
-  body .discover .discoverStatement .chair {
-    font-size: 50px;
-  }
   body .discover .discoverStatement img {
     -o-object-fit: cover;
        object-fit: cover;
@@ -287,7 +288,7 @@
     width: 50%;
     max-height: 190px;
     left: 10px;
-    top: 100px;
+    top: 162px;
   }
   body .discover .discoverStatement a {
     font-size: 14px;
@@ -300,36 +301,19 @@
   body .discover .discoverStatement a i {
     text-decoration: underline;
   }
-  body .discover .profile h2 {
-    margin-bottom: 2px;
+  body .discover .welcome h2 {
+    margin-top: 70px;
+    margin-bottom: 0px;
   }
-  body .discover .profile .profileContainer {
-    display: flex;
+  body .discover .welcome .profileContainer {
     padding: 10px;
     margin-bottom: 40px;
   }
-  body .discover .profile .profileContainer img {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 80px 80px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    margin-right: 7px;
-    width: 120px;
-    max-height: 170px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 10px;
-  }
-  body .discover .profile .profileContainer .profileText {
+  body .discover .welcome .profileContainer .profileText {
+    text-align: center;
+    font-size: 20px;
     margin: 10px;
     width: 100%;
-  }
-  body .discover .profile .profileContainer .profileText h4 {
-    margin-top: 0px;
-    margin-bottom: 4px;
-  }
-  body .discover .profile .profileContainer .profileText .typedtext {
-    margin: 3px;
-    padding-left: 3px;
   }
   body .discover .tiktok h4 {
     margin-bottom: -8px;
@@ -341,7 +325,7 @@
     left: 0px;
     background: linear-gradient(to right bottom, white 50%, black 51%), linear-gradient(-20deg, rgba(0, 0, 0, 0) 16px, rgba(0, 0, 0, 0) 0);
   }
-  body .theMenu {
+  body .testimonials {
     padding: 20px;
     padding-top: 40px;
     background-color: black;
@@ -349,31 +333,59 @@
     text-align: center;
     /* CSS */
   }
-  body .theMenu i {
+  body .testimonials i {
     font-size: 20px;
   }
-  body .theMenu h4 {
+  body .testimonials h4 {
     margin-bottom: 10px;
     font-weight: 500;
   }
-  body .theMenu .scroll-container {
-    white-space: nowrap;
-    width: 80%;
-    overflow: auto;
-    -ms-overflow-style: none;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
-    border-radius: 5px;
+  body .testimonials .swiper {
+    display: flex;
+    min-height: 50vh;
+    align-items: center;
   }
-  body .theMenu .scroll-container img {
-    scroll-snap-align: center;
-    border-radius: 5px;
-    height: 100px;
-    width: 100px;
+  body .testimonials .swiper .swiper-slide .card {
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 20px 20px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+    width: 75%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body .testimonials .swiper .swiper-slide .card img {
+    height: 80px;
+    width: 80px;
+    margin-top: -50px;
     -o-object-fit: cover;
        object-fit: cover;
+    border-radius: 80px;
   }
-  body .theMenu .theMenuBookNow {
+  body .testimonials .swiper .swiper-slide .card .review {
+    margin-top: 15px;
+    color: orange;
+  }
+  body .testimonials .swiper .swiper-button-next, body .testimonials .swiper .swiper-button-prev {
+    color: white;
+  }
+  body .testimonials .swiper .swiper-button-next:after, body .testimonials .swiper .swiper-button-prev:after {
+    font-size: 20px;
+  }
+  body .testimonials .swiper .swiper-button-prev {
+    margin-left: -15px;
+  }
+  body .testimonials .swiper .swiper-button-next {
+    margin-right: -15px;
+  }
+  body .testimonials .swiper .swiper-pagination-bullet-active {
+    background-color: #fc8d5e !important;
+  }
+  body .testimonials .swiper .swiper-pagination-bullet {
+    background-color: white;
+  }
+  body .testimonials .theMenuBookNow {
     margin-top: 30px;
     align-items: center;
     background-color: #fff;
@@ -407,15 +419,15 @@
     will-change: transform, opacity;
     z-index: 0;
   }
-  body .theMenu .theMenuBookNow:hover {
+  body .testimonials .theMenuBookNow:hover {
     background: #ccc;
     color: black;
   }
-  body .theMenu .theMenuBookNow:active {
+  body .testimonials .theMenuBookNow:active {
     box-shadow: 0 4px 4px 0 rgba(60, 64, 67, 0.3), 0 8px 12px 6px rgba(60, 64, 67, 0.15);
     outline: none;
   }
-  body .theMenu .theMenuBookNow:focus {
+  body .testimonials .theMenuBookNow:focus {
     outline: none;
     border: 2px solid #4285f4;
   }
