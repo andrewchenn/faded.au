@@ -33,13 +33,16 @@ function closeSidebarContact(){
 }
 function stopWhitespace(){
     const menu = document.querySelector('.menu')
-    if (window.scrollY > 5){
+    const logo = document.querySelector(".logo")
+    if (window.scrollY > 650){
         menu.style.position = 'fixed'
         menu.style.background = 'black'
+        logo.style.display = "block"
     }
     else{
         menu.style.position = 'relative'
         menu.style.background = 'rgba(0,0,0,0.0)'
+        logo.style.display = "none"
     }
 };
 window.addEventListener('scroll', stopWhitespace);

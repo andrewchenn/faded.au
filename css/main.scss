@@ -45,6 +45,7 @@
                   margin: 15px;
               }
               .logo{
+                display: none;
                   img{
                       align-self: center;
                       width: 100px;
@@ -69,7 +70,7 @@
               transition: 0.5s ease-in;
               button{
                   font-family: "League Spartan";
-                  font-size: 30px;
+                  font-size: 20px;
                   font-weight: 550;
                   color: white;
                   background-color: transparent;
@@ -117,7 +118,7 @@
               .heroLogo{
                 height: 250px;
                 width: 250px;
-                margin-bottom: 50px;
+                margin-bottom: 60px;
                 object-fit: cover;
                 border-radius: 2200px;
               }
@@ -139,7 +140,7 @@
                   }
               }
               .bookNow{
-                  background: #dfd1b4;
+                  background: #ff7337;
               }
               button:hover{
                   cursor: pointer;
@@ -240,9 +241,10 @@
           background-size: cover;
       }
       .announcement{
+        color: #fc8d5e;
           z-index: 2;
           height: 37px;
-          background-color:#dfd1b4;
+          background-color:black;
           .overflow{
               overflow: hidden;
           }
@@ -277,7 +279,7 @@
             text-align: right;
             .gradient{
                 text-decoration: none;
-                background: linear-gradient(to right, #102e03, #a7c687);
+                background: linear-gradient(to right, #f75d1b, #f8a07a);
                 -webkit-text-fill-color: transparent;
                 -webkit-background-clip: text;
             }
@@ -305,16 +307,18 @@
             }
           }
           .welcome{
+            margin-top: 50px;
             h2{
-                margin-top: 70px;
-                margin-bottom: 0px;
+                font-size: 15px;
+                
             }
             .profileContainer{
                 padding: 10px;
                 .profileText{
-                    text-align: center;
-                    font-size: 20px;
-                    margin: 10px;
+                    font-style: italic;
+                    text-align: left;
+                    line-height: 20px;
+                    font-size: 15px;
                     width: 100%;
                 }
                 margin-bottom: 40px;
@@ -350,7 +354,7 @@
 
           .swiper{
             display: flex;
-            min-height: 50vh;
+            min-height: 60vh;
             align-items: center;
             .swiper-slide{
                 .card{
@@ -360,6 +364,7 @@
                     box-shadow: rgba(255, 255, 255, 0.25) 0px 20px 20px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
                     width: 75%;
                     padding: 10px;
+                    height: 300px;
 
                     margin-left: auto;
                     margin-right: auto;
@@ -371,7 +376,8 @@
                         border-radius: 80px;
                     }
                     .review{
-                        margin-top: 15px;
+                        margin-top: 25px;
+                        margin-bottom: 30px;
                         color: orange;
                     }
                 }
@@ -451,17 +457,19 @@
           height:60px;
           position:relative;
           left:0px;
-          background: linear-gradient(to left bottom, black 50%, #dfd1b4 51%),    linear-gradient(-20deg, rgba(0, 0, 0, 0) 16px, #00000000 0);
+          background: linear-gradient(to left bottom, black 50%, #222222 51%),    linear-gradient(-20deg, rgba(0, 0, 0, 0) 16px, #00000000 0);
         }
       .booking{
+        color:#f75d1b;
           min-height: 600px;
           padding: 20px;
           padding-top: 40px;
-          background-color: #dfd1b4;
+          background-color: #222222;
+          overflow-y: hidden;
           .container{
             padding: 10px;
             margin-bottom: -10px;
-            background-color: #b3a68e;
+            background-color: #222222;
             border-radius: 10px;
             margin-bottom: 10px;
           }
@@ -471,7 +479,7 @@
           height:60px;
           position:relative;
           left:0px;
-          background: linear-gradient(to right bottom, #dfd1b4 50%, black 51%),    linear-gradient(-20deg, rgba(0, 0, 0, 0) 16px, #00000000 0);
+          background: linear-gradient(to right bottom, #222222 50%, black 51%),    linear-gradient(-20deg, rgba(0, 0, 0, 0) 16px, #00000000 0);
         }
       .footer{
           padding: 20px;
