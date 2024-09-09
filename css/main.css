@@ -25,12 +25,8 @@
       opacity: 1;
     }
   }
-  body .mobileHeader {
-    background-image: url(../images/mobilebackground.jpg);
-    background-size: cover;
-    height: 750px;
-  }
   body .mobileHeader .menu {
+    position: absolute;
     z-index: 998;
     top: 0;
     display: flex;
@@ -106,6 +102,13 @@
     color: white;
     text-decoration: none;
     background: transparent;
+  }
+  body .mobileHeader .backgroundVid {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   body .mobileHeader .mobileHeaderText {
     position: absolute;
@@ -206,7 +209,8 @@
     resize: none;
   }
   body .mobileSidebarContact .formContainer .mobileContactForm input[type=submit] {
-    background-color: #dfd1b4;
+    font-weight: 800;
+    background-color: #f75d1b;
     color: black;
     padding: 12px 20px;
     border: none;
@@ -214,7 +218,7 @@
     cursor: pointer;
   }
   body .mobileSidebarContact .formContainer .mobileContactForm input[type=submit]:hover {
-    background-color: #b3a68e;
+    background-color: #fc8d5e;
   }
   body .mobileSidebarContact .sidebarSocials button {
     font-family: "League Spartan";

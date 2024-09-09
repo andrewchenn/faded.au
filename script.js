@@ -40,7 +40,7 @@ function stopWhitespace(){
         logo.style.display = "block"
     }
     else{
-        menu.style.position = 'relative'
+        menu.style.position = 'absolute'
         menu.style.background = 'rgba(0,0,0,0.0)'
         logo.style.display = "none"
     }
