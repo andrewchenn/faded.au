@@ -1,13 +1,13 @@
 @media (max-width: 768px) {
   @keyframes fadeInAnimation {
     to {
-      bottom: 20svh;
+      bottom: 20vh;
       opacity: 1;
     }
   }
   body {
     overscroll-behavior: none;
-    height: 100dvh;
+    height: 100vh;
     position: auto;
     overflow-y: auto;
     margin: 0;
@@ -105,7 +105,7 @@
   body .mobileHeader .mobileHeaderText {
     animation: fadeInAnimation ease 3s forwards;
     position: absolute;
-    bottom: 10svh;
+    bottom: 10vh;
     margin: auto;
     width: 70%;
     left: 0;
