@@ -5,11 +5,8 @@
             opacity:1;
           }
     }
-    html{
-        height: 100vh;
-    }
+    
     body{
-        height: 100vh;
       overscroll-behavior: none;
       position: auto;
       overflow-y: auto;
@@ -96,7 +93,7 @@
               }
           }
           .backgroundVid{
-            height: 100vh;
+            height: 680px;
             width: 100vw;
             object-fit: cover;
         }

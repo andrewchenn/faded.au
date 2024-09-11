@@ -5,11 +5,7 @@
       opacity: 1;
     }
   }
-  html {
-    height: 100vh;
-  }
   body {
-    height: 100vh;
     overscroll-behavior: none;
     position: auto;
     overflow-y: auto;
@@ -99,7 +95,7 @@
     background: transparent;
   }
   body .mobileHeader .backgroundVid {
-    height: 100vh;
+    height: 680px;
     width: 100vw;
     -o-object-fit: cover;
        object-fit: cover;
