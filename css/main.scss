@@ -1,7 +1,7 @@
 @media (max-width: 768px) {
     @keyframes fadeInAnimation {
         to{
-            bottom: 20vh;
+            bottom: 25vh;
             opacity:1;
           }
     }
@@ -96,15 +96,15 @@
               }
           }
           .backgroundVid{
-            height: 100svh;
-            width: 100svw;
+            height: 95vh;
+            width: 100vw;
             object-fit: cover;
         }
           .mobileHeaderText{
                 animation-delay: 1.5s;
                 animation: fadeInAnimation ease 3s forwards;
               position: absolute;
-              bottom: 10vh;
+              bottom: 15vh;
               margin: auto;
               width: 70%;
               left: 0;
