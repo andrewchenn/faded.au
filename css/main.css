@@ -91,7 +91,7 @@
   }
   body .mobileHeader .mobileSidebar .sidebarSocials {
     align-self: baseline;
-    margin-top: 10svh;
+    margin-top: 10vh;
   }
   body .mobileHeader .mobileSidebar .sidebarSocials a {
     color: white;
@@ -99,7 +99,7 @@
     background: transparent;
   }
   body .mobileHeader .backgroundVid {
-    height: 95vh;
+    height: 100vh;
     width: 100vw;
     -o-object-fit: cover;
        object-fit: cover;
