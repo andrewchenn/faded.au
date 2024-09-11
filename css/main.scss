@@ -7,7 +7,6 @@
     }
     body{
       overscroll-behavior: none;
-      height: 100svh;
       position: auto;
       overflow-y: auto;
       margin: 0;
@@ -84,7 +83,7 @@
               }
               .sidebarSocials{
                   align-self: baseline;
-                  margin-top: 10dvh;
+                  margin-top: 10svh;
                   a{
                       color: white;
                       text-decoration: none;
@@ -93,8 +92,6 @@
               }
           }
           .backgroundVid{
-            position: relative;
-            height: 100svh;
             width: 100svw;
             object-fit: cover;
         }
