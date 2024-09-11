@@ -1,7 +1,7 @@
 @media (max-width: 768px) {
   @keyframes fadeInAnimation {
     to {
-      bottom: 20svh;
+      bottom: 20vh;
       opacity: 1;
     }
   }
@@ -9,6 +9,7 @@
     height: 100vh;
   }
   body {
+    height: 100vh;
     overscroll-behavior: none;
     position: auto;
     overflow-y: auto;
@@ -98,14 +99,15 @@
     background: transparent;
   }
   body .mobileHeader .backgroundVid {
-    width: 100svw;
+    height: 100vh;
     -o-object-fit: cover;
        object-fit: cover;
   }
   body .mobileHeader .mobileHeaderText {
+    animation-delay: 1.5s;
     animation: fadeInAnimation ease 3s forwards;
     position: absolute;
-    bottom: 10svh;
+    bottom: 10vh;
     margin: auto;
     width: 70%;
     left: 0;
@@ -113,8 +115,8 @@
     text-align: center;
   }
   body .mobileHeader .mobileHeaderText .heroLogo {
-    height: 250px;
-    width: 250px;
+    height: 230px;
+    width: 230px;
     margin-bottom: 60px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -262,6 +264,7 @@
     margin: 0;
   }
   body .discover {
+    overflow-x: clip;
     margin: 20px;
     margin-top: 40px;
     margin-bottom: 70px;
@@ -272,6 +275,27 @@
     font-size: 45px;
     text-align: right;
   }
+  body .discover .discoverStatement .discoverText {
+    position: relative;
+    animation: slideInRight linear;
+    animation-timeline: view(500px -100px);
+  }
+  @keyframes slideInRight {
+    0% {
+      transform: translate(80%);
+    }
+    100% {
+      transform: translate(0%);
+    }
+  }
+  @keyframes slideInLeft {
+    0% {
+      transform: translate(-80%);
+    }
+    100% {
+      transform: translate(0%);
+    }
+  }
   body .discover .discoverStatement .gradient {
     text-decoration: none;
     background: linear-gradient(to right, #f75d1b, #f8a07a);
@@ -279,6 +303,8 @@
     -webkit-background-clip: text;
   }
   body .discover .discoverStatement img {
+    animation: slideInLeft linear;
+    animation-timeline: view(600px -100px);
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 10px;
