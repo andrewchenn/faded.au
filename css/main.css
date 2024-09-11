@@ -5,6 +5,9 @@
       opacity: 1;
     }
   }
+  html {
+    height: 100vh;
+  }
   body {
     overscroll-behavior: none;
     position: auto;
