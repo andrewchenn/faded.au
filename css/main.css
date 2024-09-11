@@ -1,7 +1,7 @@
 @media (max-width: 768px) {
   @keyframes fadeInAnimation {
     to {
-      bottom: 110px;
+      bottom: 20svh;
       opacity: 1;
     }
   }
@@ -13,6 +13,9 @@
     margin: 0;
     padding: 0;
     font-family: "League Spartan";
+  }
+  body .mobileHeader {
+    position: relative;
   }
   body .mobileHeader .menu {
     position: absolute;
@@ -102,7 +105,7 @@
   body .mobileHeader .mobileHeaderText {
     animation: fadeInAnimation ease 3s forwards;
     position: absolute;
-    bottom: 50px;
+    bottom: 10svh;
     margin: auto;
     width: 70%;
     left: 0;
