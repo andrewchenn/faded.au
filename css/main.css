@@ -112,7 +112,7 @@
   }
   body .mobileHeader .mobileHeaderText {
     position: absolute;
-    bottom: 17%;
+    bottom: 17dvh;
     margin: auto;
     width: 70%;
     padding-top: 450px;
@@ -185,7 +185,7 @@
     margin-right: 5px;
   }
   body .mobileSidebarContact .closeContainer .closeIcon .fa-x {
-    display: fixed;
+    display: relative;
     margin-right: 5px;
   }
   body .mobileSidebarContact .formContainer {
