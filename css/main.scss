@@ -1,7 +1,7 @@
 @media (max-width: 768px) {
     @keyframes fadeInAnimation {
         to{
-            bottom: 25vh;
+            bottom: 155px;
             opacity:1;
           }
     }
@@ -101,7 +101,7 @@
                 animation-delay: 1.5s;
                 animation: fadeInAnimation ease 3s forwards;
               position: absolute;
-              bottom: 15vh;
+              bottom: 100px;
               margin: auto;
               width: 70%;
               left: 0;
