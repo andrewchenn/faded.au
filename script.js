@@ -26,15 +26,27 @@ function animateText2(){
     }
 }
 window.addEventListener('scroll', animateText2);
+
 function animateText1(){
     const leftToRight = document.querySelector('.discoverImage');
-    const body = document.querySelector('body')
     if (window.scrollY > 100){
     leftToRight.style.transform = 'translate(50px)'
     leftToRight.style.transition = 'transform 2s'
     }
 }
 window.addEventListener('scroll', animateText1  );
+
+function animateText3(){
+    const up = document.querySelector('.welcome');
+    const upTT = document.querySelector('.tiktok');
+    if (window.scrollY > 600){
+    up.style.opacity = '1'
+    up.style.transform = "translatey(-50px)"
+    up.style.transition = 'transform 2s'
+    }
+}
+window.addEventListener('scroll', animateText3);
+
 function showSidebarContact(){
     const sidebar = document.querySelector('.mobileSidebarContact');
     const body = document.querySelector('body')

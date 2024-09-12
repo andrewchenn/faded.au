@@ -316,14 +316,13 @@
     text-decoration: underline;
   }
   body .discover .welcome {
-    margin-top: 50px;
+    margin-top: 100px;
   }
   body .discover .welcome h2 {
     font-size: 15px;
   }
   body .discover .welcome .profileContainer {
     padding: 10px;
-    margin-bottom: 40px;
   }
   body .discover .welcome .profileContainer .profileText {
     font-style: italic;
@@ -379,10 +378,6 @@
   }
   body .testimonials .swiper .swiper-slide .card p {
     font-size: 17px;
-  }
-  body .testimonials .swiper .swiper-slide .card a {
-    text-decoration: none;
-    color: black;
   }
   body .testimonials .swiper .swiper-slide .card img {
     height: 80px;
