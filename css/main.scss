@@ -139,7 +139,7 @@
                   background: #F3F4F6;
               }
               .bookNow:hover{
-                  background: #b3a68e;
+                  background: #fc8d5e;
               }
           }
       }
@@ -180,6 +180,10 @@
               margin: 20px;
               border-radius: 10px;
               .mobileContactForm{
+                h3{
+                    font-family: "Anton";
+                    font-weight: 100;
+                }
                   margin: 30px;
                   input, select, textarea {
                       font-size: 16px;
@@ -194,6 +198,7 @@
                       resize: none;
                   }
                   input[type=submit]{
+                    font-family: "League Spartan";
                         font-weight: 800;
                       background-color: #f75d1b;
                       color: black;
@@ -208,7 +213,7 @@
               }
           }
           .sidebarSocials{
-            margin-top: 40px;
+            margin-top: 25px;
               button{
                   font-size: 20px;
                   margin: 10px;
@@ -364,6 +369,13 @@
 
                     margin-left: auto;
                     margin-right: auto;
+                    p{
+                        font-size: 17px;
+                    }
+                    a{
+                        text-decoration: none;
+                        color: black;
+                    }
                     img{
                         height: 80px;
                         width: 80px;

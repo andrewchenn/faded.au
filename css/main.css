@@ -144,7 +144,7 @@
     background: #F3F4F6;
   }
   body .mobileHeader .mobileHeaderText .bookNow:hover {
-    background: #b3a68e;
+    background: #fc8d5e;
   }
   body .mobileSidebarContact {
     color: white;
@@ -187,6 +187,10 @@
   body .mobileSidebarContact .formContainer .mobileContactForm {
     margin: 30px;
   }
+  body .mobileSidebarContact .formContainer .mobileContactForm h3 {
+    font-family: "Anton";
+    font-weight: 100;
+  }
   body .mobileSidebarContact .formContainer .mobileContactForm input, body .mobileSidebarContact .formContainer .mobileContactForm select, body .mobileSidebarContact .formContainer .mobileContactForm textarea {
     font-size: 16px;
     font-family: "League Spartan";
@@ -200,6 +204,7 @@
     resize: none;
   }
   body .mobileSidebarContact .formContainer .mobileContactForm input[type=submit] {
+    font-family: "League Spartan";
     font-weight: 800;
     background-color: #f75d1b;
     color: black;
@@ -212,7 +217,7 @@
     background-color: #fc8d5e;
   }
   body .mobileSidebarContact .sidebarSocials {
-    margin-top: 40px;
+    margin-top: 25px;
   }
   body .mobileSidebarContact .sidebarSocials button {
     font-size: 20px;
@@ -361,6 +366,13 @@
     height: 300px;
     margin-left: auto;
     margin-right: auto;
+  }
+  body .testimonials .swiper .swiper-slide .card p {
+    font-size: 17px;
+  }
+  body .testimonials .swiper .swiper-slide .card a {
+    text-decoration: none;
+    color: black;
   }
   body .testimonials .swiper .swiper-slide .card img {
     height: 80px;
