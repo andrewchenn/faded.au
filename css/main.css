@@ -180,11 +180,12 @@
     margin-right: 5px;
   }
   body .mobileSidebarContact .formContainer {
-    height: 70%;
+    height: 700px;
     margin: 20px;
     border-radius: 10px;
   }
   body .mobileSidebarContact .formContainer .mobileContactForm {
+    position: relative;
     margin: 30px;
   }
   body .mobileSidebarContact .formContainer .mobileContactForm h3 {
@@ -217,7 +218,8 @@
     background-color: #fc8d5e;
   }
   body .mobileSidebarContact .sidebarSocials {
-    margin-top: 25px;
+    position: relative;
+    margin-top: -20px;
   }
   body .mobileSidebarContact .sidebarSocials button {
     font-size: 20px;
