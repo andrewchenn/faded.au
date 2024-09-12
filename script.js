@@ -17,6 +17,24 @@ function closeSidebar(){
     sidebar.style.left = '-100%'
     body.style.overflowY = 'auto'
 }
+function animateText2(){
+    const rightToLeft = document.querySelector('.discoverText');
+    const body = document.querySelector('body')
+    if (window.scrollY > 100){
+    rightToLeft.style.transform = 'translate(-50px)'
+    rightToLeft.style.transition = 'transform 2s'
+    }
+}
+window.addEventListener('scroll', animateText2);
+function animateText1(){
+    const leftToRight = document.querySelector('.discoverImage');
+    const body = document.querySelector('body')
+    if (window.scrollY > 100){
+    leftToRight.style.transform = 'translate(50px)'
+    leftToRight.style.transition = 'transform 2s'
+    }
+}
+window.addEventListener('scroll', animateText1  );
 function showSidebarContact(){
     const sidebar = document.querySelector('.mobileSidebarContact');
     const body = document.querySelector('body')
