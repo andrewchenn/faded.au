@@ -1,489 +1,488 @@
-@media (max-width: 768px) {
-  @keyframes fadeInAnimation {
-    to {
-      bottom: 155px;
-      opacity: 1;
-    }
-  }
-  body {
-    overscroll-behavior: none;
-    position: auto;
-    overflow-y: auto;
-    overflow-x: auto;
-    margin: 0;
-    padding: 0;
-    font-family: "League Spartan";
-  }
-  body .mobileHeader {
-    position: relative;
-  }
-  body .mobileHeader .menu {
-    position: absolute;
-    z-index: 998;
-    top: 0;
-    display: flex;
-    justify-content: space-between;
-    height: 54px;
-    width: 100%;
-  }
-  body .mobileHeader .menu i {
-    color: white;
-    font-size: 20px;
-  }
-  body .mobileHeader .menu .icon {
-    margin: 15px;
-  }
-  body .mobileHeader .menu .logo {
-    display: none;
-  }
-  body .mobileHeader .menu .logo img {
-    align-self: center;
-    width: 100px;
-    height: 54px;
-    padding-top: 7px;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  body .mobileHeader .mobileSidebar {
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    width: 100%;
-    z-index: 999;
-    overflow-x: hidden;
-    display: flex;
-    background: black;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    left: -100%;
-    flex-direction: column;
-    transition: 0.5s ease-in;
-  }
-  body .mobileHeader .mobileSidebar button {
-    font-family: "Anton";
-    font-size: 20px;
-    font-weight: 550;
-    color: white;
-    background-color: transparent;
-    border: none;
-    height: 40px;
-  }
-  body .mobileHeader .mobileSidebar button:hover {
-    background: rgba(37, 40, 45, 0.9);
-  }
-  body .mobileHeader .mobileSidebar .closeIcon {
-    text-align: left;
-    font-size: 20px;
-    height: 54px;
-    width: 40px;
-  }
-  body .mobileHeader .mobileSidebar .closeIcon .fa-x {
-    display: fixed;
-    margin-left: 5px;
-  }
-  body .mobileHeader .mobileSidebar .closeIcon:hover {
-    background: transparent;
-  }
-  body .mobileHeader .mobileSidebar .sidebarButton {
-    height: 100px;
-  }
-  body .mobileHeader .mobileSidebar .sidebarSocials {
-    align-self: baseline;
-    margin-top: 10vh;
-  }
-  body .mobileHeader .mobileSidebar .sidebarSocials a {
-    color: white;
-    text-decoration: none;
-    background: transparent;
-  }
-  body .mobileHeader .backgroundVid {
-    height: 680px;
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  body .mobileHeader .mobileHeaderText {
-    animation-delay: 1.5s;
-    animation: fadeInAnimation ease 3s forwards;
-    position: absolute;
-    bottom: 100px;
-    margin: auto;
-    width: 70%;
-    left: 0;
-    right: 0;
-    text-align: center;
-  }
-  body .mobileHeader .mobileHeaderText .heroLogo {
-    height: 230px;
-    width: 230px;
-    margin-bottom: 60px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 2200px;
-  }
-  body .mobileHeader .mobileHeaderText button {
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    height: 40px;
-    color: black;
-    border-color: rgba(0, 0, 0, 0.0509803922);
-    border-style: solid;
-    border: 1px;
-    padding: 8px 14px 8px 14px;
-    border-radius: 4px;
-    font-size: 12px;
-    font-weight: 300;
-    font-family: "Anton";
-    margin: 5px 5px 5px 5px;
-  }
-  body .mobileHeader .mobileHeaderText button .icon {
-    margin-left: 10px;
-  }
-  body .mobileHeader .mobileHeaderText .bookNow {
-    background: #ff7337;
-  }
-  body .mobileHeader .mobileHeaderText button:hover {
-    cursor: pointer;
-    background: #F3F4F6;
-  }
-  body .mobileHeader .mobileHeaderText .bookNow:hover {
-    background: #fc8d5e;
-  }
-  body .mobileSidebarContact {
-    color: white;
-    position: fixed;
-    top: 0;
-    height: 100vh;
-    width: 100%;
-    z-index: 999;
-    overflow-x: hidden;
-    display: flex;
-    right: -100%;
-    background: black;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
-    flex-direction: column;
-    transition: 0.5s ease-in;
-  }
-  body .mobileSidebarContact .closeContainer {
-    height: 5%;
-  }
-  body .mobileSidebarContact .closeContainer .closeIcon {
-    float: right;
-    background: transparent;
-    color: white;
-    border: none;
-    text-align: right;
-    font-size: 20px;
-    height: 54px;
-    width: 40px;
-    margin-right: 5px;
-  }
-  body .mobileSidebarContact .closeContainer .closeIcon .fa-x {
-    display: relative;
-    margin-right: 5px;
-  }
-  body .mobileSidebarContact .formContainer {
-    height: 700px;
-    margin: 20px;
-    border-radius: 10px;
-  }
-  body .mobileSidebarContact .formContainer .mobileContactForm {
-    position: relative;
-    margin: 30px;
-  }
-  body .mobileSidebarContact .formContainer .mobileContactForm h3 {
-    font-family: "Anton";
-    font-weight: 100;
-  }
-  body .mobileSidebarContact .formContainer .mobileContactForm input, body .mobileSidebarContact .formContainer .mobileContactForm select, body .mobileSidebarContact .formContainer .mobileContactForm textarea {
-    font-size: 16px;
-    font-family: "League Spartan";
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: none;
-  }
-  body .mobileSidebarContact .formContainer .mobileContactForm input[type=submit] {
-    font-family: "League Spartan";
-    font-weight: 800;
-    background-color: #f75d1b;
-    color: black;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  body .mobileSidebarContact .formContainer .mobileContactForm input[type=submit]:hover {
-    background-color: #fc8d5e;
-  }
-  body .mobileSidebarContact .sidebarSocials {
-    position: relative;
-    margin-top: -20px;
-  }
-  body .mobileSidebarContact .sidebarSocials button {
-    font-size: 20px;
-    margin: 10px;
-    background-color: transparent;
-    border: none;
-    height: 40px;
-  }
-  body .mobileSidebarContact .sidebarSocials a {
-    color: white;
-  }
-  body .parallax {
-    display: none;
-    background-image: url(../images/background.jpg);
-    min-height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  body .announcement {
-    color: #fc8d5e;
-    z-index: 2;
-    height: 37px;
-    background-color: black;
-  }
-  body .announcement .overflow {
-    overflow: hidden;
-  }
-  body .announcement .rightToLeft {
-    animation: RightToLeft 10s infinite linear;
-  }
-  @keyframes RightToLeft {
-    from {
-      transform: translateX(0%);
-    }
-    to {
-      transform: translateX(-50%);
-    }
-  }
-  body .announcement h6 {
-    z-index: 997;
-    font-size: 15px;
-    text-wrap: nowrap;
-    padding-top: 12px;
-    margin: 0;
-  }
-  body .discover {
-    margin: 20px;
-    margin-top: 40px;
-    margin-bottom: 70px;
-    overflow: hidden;
-  }
-  body .discover .discoverStatement {
-    height: 370px;
-    overflow: hidden;
-    position: relative;
-    font-size: 45px;
-    text-align: right;
-  }
-  body .discover .discoverStatement .discoverText {
-    position: absolute;
-    top: -50px;
-    right: -50px;
-  }
-  body .discover .discoverStatement .gradient {
-    text-decoration: none;
-    background: linear-gradient(to right, #f75d1b, #f8a07a);
-    -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text;
-  }
-  body .discover .discoverStatement img {
-    overflow: hidden;
-    position: absolute;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 10px;
-    border: solid 3px rgba(76, 76, 76, 0.9);
-    width: 50%;
-    max-height: 190px;
-    left: -30px;
-    top: 166px;
-  }
-  body .discover .discoverStatement a {
-    font-size: 14px;
-    font-weight: 850;
-    text-decoration: underline;
-    position: absolute;
-    right: 10px;
-    top: 260px;
-  }
-  body .discover .discoverStatement a i {
-    text-decoration: underline;
-  }
-  body .discover .welcome {
-    margin-top: 100px;
-  }
-  body .discover .welcome h2 {
-    font-size: 15px;
-  }
-  body .discover .welcome .profileContainer {
-    padding: 10px;
-  }
-  body .discover .welcome .profileContainer .profileText {
-    font-style: italic;
-    text-align: left;
-    line-height: 20px;
-    font-size: 15px;
-    width: 100%;
-  }
-  body .discover .tiktok h4 {
-    margin-bottom: -8px;
-  }
-  body .skew-cc {
-    width: 100%;
-    height: 60px;
-    position: relative;
-    left: 0px;
-    background: linear-gradient(to right bottom, white 50%, black 51%), linear-gradient(-20deg, rgba(0, 0, 0, 0) 16px, rgba(0, 0, 0, 0) 0);
-  }
-  body .testimonials {
-    padding: 20px;
-    padding-top: 40px;
-    background-color: black;
-    color: white;
-    text-align: center;
-    /* CSS */
-  }
-  body .testimonials h2 {
-    font-family: "Anton";
-    font-weight: 200;
-  }
-  body .testimonials i {
-    font-size: 20px;
-  }
-  body .testimonials h4 {
-    margin-bottom: 10px;
-    font-weight: 500;
-  }
-  body .testimonials .swiper {
-    display: flex;
-    min-height: 60vh;
-    align-items: center;
-  }
-  body .testimonials .swiper .swiper-slide .card {
-    color: black;
-    background-color: white;
-    border-radius: 10px;
-    box-shadow: rgba(255, 255, 255, 0.25) 0px 20px 20px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
-    width: 75%;
-    padding: 10px;
-    height: 300px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  body .testimonials .swiper .swiper-slide .card p {
-    font-size: 17px;
-  }
-  body .testimonials .swiper .swiper-slide .card img {
-    height: 80px;
-    width: 80px;
-    margin-top: -50px;
-    -o-object-fit: cover;
-       object-fit: cover;
-    border-radius: 80px;
-  }
-  body .testimonials .swiper .swiper-slide .card .review {
-    margin-top: 25px;
-    margin-bottom: 30px;
-    color: orange;
-  }
-  body .testimonials .swiper .swiper-button-next, body .testimonials .swiper .swiper-button-prev {
-    color: white;
-  }
-  body .testimonials .swiper .swiper-button-next:after, body .testimonials .swiper .swiper-button-prev:after {
-    font-size: 20px;
-  }
-  body .testimonials .swiper .swiper-button-prev {
-    margin-left: -15px;
-  }
-  body .testimonials .swiper .swiper-button-next {
-    margin-right: -15px;
-  }
-  body .testimonials .swiper .swiper-pagination-bullet-active {
-    background-color: #fc8d5e !important;
-  }
-  body .testimonials .swiper .swiper-pagination-bullet {
-    background-color: white;
-  }
-  body .testimonials .theMenuBookNow {
-    margin-top: 30px;
-    align-items: center;
-    background-color: #fff;
-    color: #222222;
-    border-radius: 24px;
-    border-style: none;
-    box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px, rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
-    cursor: pointer;
-    font-family: "Anton";
-    height: 48px;
-    justify-content: center;
-    width: 100px;
-  }
-  body .testimonials .theMenuBookNow:hover {
-    background: #ccc;
-    color: black;
-  }
-  body .skew-ccc {
-    width: 100%;
-    height: 60px;
-    position: relative;
-    left: 0px;
-    background: linear-gradient(to left bottom, black 50%, #222222 51%), linear-gradient(-20deg, rgba(0, 0, 0, 0) 16px, rgba(0, 0, 0, 0) 0);
-  }
-  body .booking {
-    font-family: "Anton";
-    font-size: 18px;
-    color: #f75d1b;
-    min-height: 700px;
-    padding: 20px;
-    padding-top: 40px;
-    background-color: #222222;
-    overflow-y: hidden;
-  }
-  body .booking .container {
-    padding: 10px;
-    margin-bottom: -10px;
-    background-color: #222222;
-    border-radius: 10px;
-    margin-bottom: 10px;
-  }
-  body .skew-cccc {
-    width: 100%;
-    height: 60px;
-    position: relative;
-    left: 0px;
-    background: linear-gradient(to right bottom, #222222 50%, black 51%), linear-gradient(-20deg, rgba(0, 0, 0, 0) 16px, rgba(0, 0, 0, 0) 0);
-  }
-  body .footer {
-    padding: 20px;
-    padding-top: 40px;
-    color: #ccc;
-    background: black;
-  }
-  body .footer h4 {
-    margin-bottom: 5px;
-    margin-left: 5px;
-  }
-  body .footer button {
-    background: transparent;
-    font-size: 17px;
-    font-weight: 550;
-    color: white;
-    background-color: transparent;
-    border: none;
-    height: 40px;
-    margin-bottom: 10px;
-  }
-  body .footer button a {
-    text-decoration: none;
-    color: white;
+@keyframes fadeInAnimation {
+  to {
+    bottom: 155px;
+    opacity: 1;
   }
 }
+body {
+  overscroll-behavior: none;
+  position: auto;
+  overflow-y: auto;
+  overflow-x: auto;
+  margin: 0;
+  padding: 0;
+  font-family: "League Spartan";
+}
+body .mobileHeader {
+  position: relative;
+}
+body .mobileHeader .menu {
+  position: absolute;
+  z-index: 998;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  height: 54px;
+  width: 100%;
+}
+body .mobileHeader .menu i {
+  color: white;
+  font-size: 20px;
+}
+body .mobileHeader .menu .icon {
+  margin: 15px;
+}
+body .mobileHeader .menu .logo {
+  display: none;
+}
+body .mobileHeader .menu .logo img {
+  align-self: center;
+  width: 100px;
+  height: 54px;
+  padding-top: 7px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .mobileHeader .mobileSidebar {
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+  overflow-x: hidden;
+  display: flex;
+  background: black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  left: -100%;
+  flex-direction: column;
+  transition: 0.5s ease-in;
+}
+body .mobileHeader .mobileSidebar button {
+  font-family: "Anton";
+  font-size: 20px;
+  font-weight: 550;
+  color: white;
+  background-color: transparent;
+  border: none;
+  height: 40px;
+}
+body .mobileHeader .mobileSidebar button:hover {
+  background: rgba(37, 40, 45, 0.9);
+}
+body .mobileHeader .mobileSidebar .closeIcon {
+  text-align: left;
+  font-size: 20px;
+  height: 54px;
+  width: 40px;
+}
+body .mobileHeader .mobileSidebar .closeIcon .fa-x {
+  display: fixed;
+  margin-left: 5px;
+}
+body .mobileHeader .mobileSidebar .closeIcon:hover {
+  background: transparent;
+}
+body .mobileHeader .mobileSidebar .sidebarButton {
+  height: 100px;
+}
+body .mobileHeader .mobileSidebar .sidebarSocials {
+  align-self: baseline;
+  margin-top: 10vh;
+}
+body .mobileHeader .mobileSidebar .sidebarSocials a {
+  color: white;
+  text-decoration: none;
+  background: transparent;
+}
+body .mobileHeader .backgroundVid {
+  height: 680px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+body .mobileHeader .mobileHeaderText {
+  animation-delay: 1.5s;
+  animation: fadeInAnimation ease 3s forwards;
+  position: absolute;
+  bottom: 100px;
+  margin: auto;
+  width: 70%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+body .mobileHeader .mobileHeaderText .heroLogo {
+  height: 230px;
+  width: 230px;
+  margin-bottom: 60px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 2200px;
+}
+body .mobileHeader .mobileHeaderText button {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  height: 40px;
+  color: black;
+  border-color: rgba(0, 0, 0, 0.0509803922);
+  border-style: solid;
+  border: 1px;
+  padding: 8px 14px 8px 14px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 300;
+  font-family: "Anton";
+  margin: 5px 5px 5px 5px;
+}
+body .mobileHeader .mobileHeaderText button .icon {
+  margin-left: 10px;
+}
+body .mobileHeader .mobileHeaderText .bookNow {
+  background: #ff7337;
+}
+body .mobileHeader .mobileHeaderText button:hover {
+  cursor: pointer;
+  background: #F3F4F6;
+}
+body .mobileHeader .mobileHeaderText .bookNow:hover {
+  background: #fc8d5e;
+}
+body .mobileSidebarContact {
+  color: white;
+  position: fixed;
+  top: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+  overflow-x: hidden;
+  display: flex;
+  right: -100%;
+  background: black;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  flex-direction: column;
+  transition: 0.5s ease-in;
+}
+body .mobileSidebarContact .closeContainer {
+  height: 5%;
+}
+body .mobileSidebarContact .closeContainer .closeIcon {
+  float: right;
+  background: transparent;
+  color: white;
+  border: none;
+  text-align: right;
+  font-size: 20px;
+  height: 54px;
+  width: 40px;
+  margin-right: 5px;
+}
+body .mobileSidebarContact .closeContainer .closeIcon .fa-x {
+  display: relative;
+  margin-right: 5px;
+}
+body .mobileSidebarContact .formContainer {
+  height: 700px;
+  margin: 20px;
+  border-radius: 10px;
+}
+body .mobileSidebarContact .formContainer .mobileContactForm {
+  position: relative;
+  margin: 30px;
+}
+body .mobileSidebarContact .formContainer .mobileContactForm h3 {
+  font-family: "Anton";
+  font-weight: 100;
+}
+body .mobileSidebarContact .formContainer .mobileContactForm input, body .mobileSidebarContact .formContainer .mobileContactForm select, body .mobileSidebarContact .formContainer .mobileContactForm textarea {
+  font-size: 16px;
+  font-family: "League Spartan";
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */
+  border: 1px solid #ccc; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: none;
+}
+body .mobileSidebarContact .formContainer .mobileContactForm input[type=submit] {
+  font-family: "League Spartan";
+  font-weight: 800;
+  background-color: #f75d1b;
+  color: black;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+body .mobileSidebarContact .formContainer .mobileContactForm input[type=submit]:hover {
+  background-color: #fc8d5e;
+}
+body .mobileSidebarContact .sidebarSocials {
+  position: relative;
+  margin-top: -20px;
+}
+body .mobileSidebarContact .sidebarSocials button {
+  font-size: 20px;
+  margin: 10px;
+  background-color: transparent;
+  border: none;
+  height: 40px;
+}
+body .mobileSidebarContact .sidebarSocials a {
+  color: white;
+}
+body .parallax {
+  display: none;
+  background-image: url(../images/background.jpg);
+  min-height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+body .announcement {
+  color: #fc8d5e;
+  z-index: 2;
+  height: 37px;
+  background-color: black;
+}
+body .announcement .overflow {
+  overflow: hidden;
+}
+body .announcement .rightToLeft {
+  animation: RightToLeft 10s infinite linear;
+}
+@keyframes RightToLeft {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+body .announcement h6 {
+  z-index: 997;
+  font-size: 15px;
+  text-wrap: nowrap;
+  padding-top: 12px;
+  margin: 0;
+}
+body .discover {
+  margin: 20px;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  overflow: hidden;
+}
+body .discover .discoverStatement {
+  height: 370px;
+  overflow: hidden;
+  position: relative;
+  font-size: 45px;
+  text-align: right;
+}
+body .discover .discoverStatement .discoverText {
+  position: absolute;
+  top: -50px;
+  right: -50px;
+}
+body .discover .discoverStatement .gradient {
+  text-decoration: none;
+  background: linear-gradient(to right, #f75d1b, #f8a07a);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+body .discover .discoverStatement img {
+  overflow: hidden;
+  position: absolute;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  border: solid 3px rgba(76, 76, 76, 0.9);
+  width: 50%;
+  max-height: 190px;
+  left: -30px;
+  top: 166px;
+}
+body .discover .discoverStatement a {
+  font-size: 14px;
+  font-weight: 850;
+  text-decoration: underline;
+  position: absolute;
+  right: 10px;
+  top: 260px;
+}
+body .discover .discoverStatement a i {
+  text-decoration: underline;
+}
+body .discover .welcome {
+  margin-top: 100px;
+}
+body .discover .welcome h2 {
+  font-size: 15px;
+}
+body .discover .welcome .profileContainer {
+  padding: 10px;
+}
+body .discover .welcome .profileContainer .profileText {
+  font-style: italic;
+  text-align: left;
+  line-height: 20px;
+  font-size: 15px;
+  width: 100%;
+}
+body .discover .tiktok h4 {
+  margin-bottom: -8px;
+}
+body .skew-cc {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  left: 0px;
+  background: linear-gradient(to right bottom, white 50%, black 51%), linear-gradient(-20deg, rgba(0, 0, 0, 0) 16px, rgba(0, 0, 0, 0) 0);
+}
+body .testimonials {
+  padding: 20px;
+  padding-top: 40px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  /* CSS */
+}
+body .testimonials h2 {
+  font-family: "Anton";
+  font-weight: 200;
+}
+body .testimonials i {
+  font-size: 20px;
+}
+body .testimonials h4 {
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+body .testimonials .swiper {
+  display: flex;
+  min-height: 60vh;
+  align-items: center;
+}
+body .testimonials .swiper .swiper-slide .card {
+  color: black;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: rgba(255, 255, 255, 0.25) 0px 20px 20px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
+  width: 75%;
+  padding: 10px;
+  height: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+body .testimonials .swiper .swiper-slide .card p {
+  font-size: 17px;
+}
+body .testimonials .swiper .swiper-slide .card img {
+  height: 80px;
+  width: 80px;
+  margin-top: -50px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 80px;
+}
+body .testimonials .swiper .swiper-slide .card .review {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  color: orange;
+}
+body .testimonials .swiper .swiper-button-next, body .testimonials .swiper .swiper-button-prev {
+  color: white;
+}
+body .testimonials .swiper .swiper-button-next:after, body .testimonials .swiper .swiper-button-prev:after {
+  font-size: 20px;
+}
+body .testimonials .swiper .swiper-button-prev {
+  margin-left: -15px;
+}
+body .testimonials .swiper .swiper-button-next {
+  margin-right: -15px;
+}
+body .testimonials .swiper .swiper-pagination-bullet-active {
+  background-color: #fc8d5e !important;
+}
+body .testimonials .swiper .swiper-pagination-bullet {
+  background-color: white;
+}
+body .testimonials .theMenuBookNow {
+  margin-top: 30px;
+  align-items: center;
+  background-color: #fff;
+  color: #222222;
+  border-radius: 24px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, 0.2) 0 3px 5px -1px, rgba(0, 0, 0, 0.14) 0 6px 10px 0, rgba(0, 0, 0, 0.12) 0 1px 18px 0;
+  cursor: pointer;
+  font-family: "Anton";
+  height: 48px;
+  justify-content: center;
+  width: 100px;
+}
+body .testimonials .theMenuBookNow:hover {
+  background: #ccc;
+  color: black;
+}
+body .skew-ccc {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  left: 0px;
+  background: linear-gradient(to left bottom, black 50%, #222222 51%), linear-gradient(-20deg, rgba(0, 0, 0, 0) 16px, rgba(0, 0, 0, 0) 0);
+}
+body .booking {
+  font-family: "Anton";
+  font-size: 18px;
+  color: #f75d1b;
+  min-height: 700px;
+  padding: 20px;
+  padding-top: 40px;
+  background-color: #222222;
+  overflow-y: hidden;
+}
+body .booking .container {
+  padding: 10px;
+  margin-bottom: -10px;
+  background-color: #222222;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+body .skew-cccc {
+  width: 100%;
+  height: 60px;
+  position: relative;
+  left: 0px;
+  background: linear-gradient(to right bottom, #222222 50%, black 51%), linear-gradient(-20deg, rgba(0, 0, 0, 0) 16px, rgba(0, 0, 0, 0) 0);
+}
+body .footer {
+  padding: 20px;
+  padding-top: 40px;
+  color: #ccc;
+  background: black;
+}
+body .footer h4 {
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+body .footer button {
+  background: transparent;
+  font-size: 17px;
+  font-weight: 550;
+  color: white;
+  background-color: transparent;
+  border: none;
+  height: 40px;
+  margin-bottom: 10px;
+}
+body .footer button a {
+  text-decoration: none;
+  color: white;
+}
+
 /* Tablet Styles (768px to 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
   @keyframes fadeInAnimation {
