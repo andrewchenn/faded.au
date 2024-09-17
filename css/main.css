@@ -483,4 +483,149 @@
     text-decoration: none;
     color: white;
   }
+}
+/* Tablet Styles (768px to 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  @keyframes fadeInAnimation {
+    to {
+      bottom: 180px; /* Slightly higher for larger screens */
+      opacity: 1;
+    }
+  }
+  body {
+    overscroll-behavior: none;
+    position: auto;
+    overflow-y: auto;
+    overflow-x: auto;
+    margin: 0;
+    padding: 0;
+    font-family: "League Spartan";
+  }
+  .mobileHeader {
+    position: relative;
+  }
+  .mobileHeader .menu {
+    position: absolute;
+    z-index: 998;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    height: 60px; /* Increase height for better accessibility */
+    width: 100%;
+  }
+  .mobileHeader .menu i {
+    color: white;
+    font-size: 24px; /* Larger icon size */
+  }
+  .mobileHeader .menu .icon {
+    margin: 20px; /* More space for touch interactions */
+  }
+  .mobileHeader .menu .logo {
+    display: block; /* Show logo on tablet */
+  }
+  .mobileHeader .menu .logo img {
+    align-self: center;
+    width: 120px; /* Larger logo for better visibility */
+    height: 60px;
+    padding-top: 10px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .mobileHeader .mobileSidebar {
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 80%; /* Reduced width for tablets */
+    z-index: 999;
+    overflow-x: hidden;
+    display: flex;
+    background: black;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    left: -80%; /* Transition sidebar more smoothly */
+    flex-direction: column;
+    transition: 0.5s ease-in;
+  }
+  .mobileHeader .backgroundVid {
+    height: 800px; /* Larger height for tablets */
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .mobileHeader .mobileHeaderText {
+    animation-delay: 1.5s;
+    animation: fadeInAnimation ease 3s forwards;
+    position: absolute;
+    bottom: 150px; /* Slight adjustment for larger screen */
+    margin: auto;
+    width: 60%; /* Slightly reduced width for more focus */
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .mobileHeader .mobileHeaderText .heroLogo {
+    height: 250px; /* Increase hero logo size */
+    width: 250px;
+    margin-bottom: 60px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 2200px;
+  }
+  .mobileHeader .mobileHeaderText button {
+    height: 45px;
+    font-size: 14px; /* Larger font size for buttons */
+    padding: 10px 16px;
+  }
+  .mobileSidebarContact {
+    width: 80%; /* Same sidebar width as the main one */
+    right: -80%; /* Adjust transition behavior */
+  }
+  .announcement {
+    height: 40px; /* Slightly larger height for announcements */
+  }
+  .announcement h6 {
+    font-size: 16px; /* Adjusted for tablet readability */
+  }
+  .discover {
+    margin: 30px; /* More space on larger screen */
+  }
+  .discover .discoverStatement {
+    font-size: 48px; /* Larger font for discover statement */
+  }
+  .discover img {
+    width: 60%; /* Larger image */
+    max-height: 200px;
+    left: -40px; /* Slightly adjust image position */
+    top: 180px;
+  }
+  .testimonials {
+    padding: 30px;
+    padding-top: 50px;
+  }
+  .testimonials h2 {
+    font-size: 28px; /* Larger heading size */
+  }
+  .testimonials .swiper {
+    min-height: 70vh;
+  }
+  .testimonials .swiper .swiper-slide .card {
+    width: 70%;
+    height: 350px; /* Larger card height for more content */
+  }
+  .testimonials .swiper .swiper-slide img {
+    height: 90px;
+    width: 90px;
+  }
+  .booking {
+    min-height: 800px; /* Increase height for booking section */
+  }
+  .footer {
+    padding: 30px;
+    padding-top: 50px;
+  }
+  .footer h4 {
+    font-size: 18px; /* Larger font size for footer headings */
+  }
+  .footer button {
+    font-size: 18px;
+  }
 }/*# sourceMappingURL=main.css.map */
