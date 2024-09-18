@@ -435,9 +435,11 @@ body .skew-ccc {
   background: linear-gradient(to left bottom, black 50%, #222222 51%), linear-gradient(-20deg, rgba(0, 0, 0, 0) 16px, rgba(0, 0, 0, 0) 0);
 }
 body .booking {
-  font-family: "Anton";
-  font-size: 18px;
+  font-family: "Oswald";
+  letter-spacing: -1px;
+  font-size: 20px;
   color: #f75d1b;
+  font-weight: 100;
   min-height: 700px;
   padding: 20px;
   padding-top: 40px;
@@ -447,7 +449,7 @@ body .booking {
 body .booking .container {
   padding: 10px;
   margin-bottom: -10px;
-  background-color: #222222;
+  background-color: white;
   border-radius: 10px;
   margin-bottom: 10px;
 }
@@ -466,7 +468,16 @@ body .footer {
 }
 body .footer h4 {
   margin-bottom: 5px;
+}
+body .footer h6 {
+  margin: 15px;
   margin-left: 5px;
+  font-size: 13px;
+  font-weight: 600;
+}
+body .footer h6 a {
+  color: white;
+  margin-left: 7px;
 }
 body .footer button {
   background: transparent;
@@ -481,6 +492,9 @@ body .footer button {
 body .footer button a {
   text-decoration: none;
   color: white;
+}
+body .footer p {
+  font-size: smaller;
 }
 
 /* Tablet Styles (768px to 1024px) */
