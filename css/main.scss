@@ -537,6 +537,7 @@
         .menu {
             position: absolute;
             z-index: 998;
+            left: 0;
             top: 0;
             display: flex;
             justify-content: space-between;
@@ -687,5 +688,8 @@
     html{
         width: 500px;
         margin: auto;
+    }
+    .menu{
+        left: 0;
     }
   }
