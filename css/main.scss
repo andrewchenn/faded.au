@@ -509,6 +509,11 @@
 /* Tablet Styles (768px to 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
     
+    html{
+        width: 500px;
+        margin: auto;
+    }
+
     @keyframes fadeInAnimation {
         to {
             bottom: 180px; /* Slightly higher for larger screens */
@@ -536,7 +541,7 @@
             display: flex;
             justify-content: space-between;
             height: 60px; /* Increase height for better accessibility */
-            width: 100%;
+            width: 500px;
             
             i {
                 color: white;
@@ -679,5 +684,8 @@
 }
 
 @media (min-width: 992px) {
-    
+    html{
+        width: 500px;
+        margin: auto;
+    }
   }

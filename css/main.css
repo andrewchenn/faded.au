@@ -499,6 +499,10 @@ body .footer p {
 
 /* Tablet Styles (768px to 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
+  html {
+    width: 500px;
+    margin: auto;
+  }
   @keyframes fadeInAnimation {
     to {
       bottom: 180px; /* Slightly higher for larger screens */
@@ -524,7 +528,7 @@ body .footer p {
     display: flex;
     justify-content: space-between;
     height: 60px; /* Increase height for better accessibility */
-    width: 100%;
+    width: 500px;
   }
   .mobileHeader .menu i {
     color: white;
@@ -640,5 +644,11 @@ body .footer p {
   }
   .footer button {
     font-size: 18px;
+  }
+}
+@media (min-width: 992px) {
+  html {
+    width: 500px;
+    margin: auto;
   }
 }/*# sourceMappingURL=main.css.map */
