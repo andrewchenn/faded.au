@@ -76,13 +76,10 @@
             </div>
           </div>
     </div>
-    <div class="parallax">
-        asdfasdfsf
-    </div>
     <div class="announcement">
         <div class="overflow">
             <div class="rightToLeft">
-                <h6>Welcome to Faded barber studio, Chisholm’s flagship barbershop. Run by dedicated owner Shreyash to create a space where your vision becomes reality. </h6>
+                <h6>Welcome to Faded barber studio, Chisholm’s flagship barbershop. Run by dedicated owner Shreyash to create a space where your vision becomes reality. <span class="announcementSpan">Before we arrived, barbering in the local area was overlooked with poor communication, outdated styles and rushed services. Now, we aim to inspire change and elevate the craft. Engaged with our community through active social media and content creation, Faded Barber Studio is the place where tradition meets innovation.</span></h6>
             </div>
         </div>
     </div> 
@@ -179,16 +176,22 @@
     </div>
     <div class="skew-cccc"></div>
     <div class="footer">
-        <h4>CONTACT US:</h4>
-        <h6><i class="fa-solid fa-phone"></i><a href="tel:61410620937">+61 410620937</a></h6>
-        <h6><i class="fa-solid fa-envelope"></i><a href="mailto:shreyash@fadedstudio.com.au">shreyash@fadedstudio.com.au</a></h6>
-        <h4>LOCATION:</h4>
-        <h6><i class="fa-solid fa-location-dot"></i><a href="https://maps.app.goo.gl/KB5KoW7kZRubLneu8">87 Arrowtail St, Chisholm, NSW, 2322</a></h6>
-        <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:250px;"><div id="my-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=87+Arrowtail+St,+Chisholm+NSW+2322,+Australia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="googlecoder" href="https://kbj9qpmy.com/hrn" id="get-data-for-map">Hosting Right Now</a><style>#my-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
-        <h4>SOCIALS:</h4>
+        <div class="footerContact">
+            <h4>CONTACT US:</h4>
+            <h6><i class="fa-solid fa-phone"></i><a href="tel:61410620937">+61 410620937</a></h6>
+            <h6><i class="fa-solid fa-envelope"></i><a href="mailto:shreyash@fadedstudio.com.au">shreyash@fadedstudio.com.au</a></h6>
+        </div>
+        <div class="footerLocation">
+            <h4>LOCATION:</h4>
+            <h6><i class="fa-solid fa-location-dot"></i><a href="https://maps.app.goo.gl/KB5KoW7kZRubLneu8">87 Arrowtail St, Chisholm, NSW, 2322</a></h6>
+            <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:250px;"><div id="my-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=87+Arrowtail+St,+Chisholm+NSW+2322,+Australia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="googlecoder" href="https://kbj9qpmy.com/hrn" id="get-data-for-map">Hosting Right Now</a><style>#my-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
+        </div>
+        <div class="footerSocials">
+            <h4>SOCIALS:</h4>
             <button class="instagram"><a href="https://www.instagram.com/faded.au/"><i class="fa-brands fa-instagram"></i></a></button>
             <button class="tiktok"> <a href="https://www.tiktok.com/@shreyashh.k"><i class="fa-brands fa-tiktok"></i></a></button>
         <hr>
+        </div>
         <p>© 2024 Chen. All Rights Reserved.</p>
     </div>
     <script src="script.js"></script>
@@ -196,19 +199,48 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>   
   <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 1,
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-        },
-        });
+        function myFunction(x) {
+            if (x.matches) { // If media query matches
+                var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 3,
+                    spaceBetween: 30,
+                    loop: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                });
+            } else {
+                var swiper = new Swiper(".mySwiper", {
+                    slidesPerView: 1,
+                    spaceBetween: 30,
+                    loop: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        clickable: true,
+                    },
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    });
+            }
+            }
+            // Create a MediaQueryList object
+            var x = window.matchMedia("(min-width: 992px)")
+
+            // Call listener function at run time
+            myFunction(x);
+
+            // Attach listener function on state changes
+            x.addEventListener("change", function() {
+            myFunction(x);
+            });
+       
     </script>
     
     

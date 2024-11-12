@@ -231,15 +231,6 @@ body .mobileSidebarContact .sidebarSocials button {
 body .mobileSidebarContact .sidebarSocials a {
   color: white;
 }
-body .parallax {
-  display: none;
-  background-image: url(../images/background.jpg);
-  min-height: 500px;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 body .announcement {
   color: #fc8d5e;
   z-index: 2;
@@ -251,6 +242,9 @@ body .announcement .overflow {
 }
 body .announcement .rightToLeft {
   animation: RightToLeft 10s infinite linear;
+}
+body .announcement .rightToLeft .announcementSpan {
+  display: none;
 }
 @keyframes RightToLeft {
   from {
@@ -647,12 +641,65 @@ body .footer p {
     font-size: 18px;
   }
 }
+/* Desktop Styles (>992px) */
 @media (min-width: 992px) {
   html {
-    width: 500px;
     margin: auto;
   }
-  .menu {
-    left: 0;
+  body .background .backgroundVid {
+    height: 100%;
+  }
+  body .announcement .rightToLeft {
+    animation: RightToLeftDesktop 20s infinite linear;
+  }
+  body .announcement .rightToLeft .announcementSpan {
+    display: inline;
+  }
+  @keyframes RightToLeftDesktop {
+    from {
+      transform: translateX(10%);
+    }
+    to {
+      transform: translateX(-200%);
+    }
+  }
+  body .discover {
+    margin-top: -10px;
+    display: grid;
+    gap: 0px 80px;
+    grid-template-columns: 40% 60%;
+  }
+  body .discover .welcome {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    width: 80%;
+    margin-top: 40px;
+  }
+  body .discover .discoverStatement {
+    width: 80%;
+    height: 450px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+  }
+  body .discover .discoverStatement .discoverText {
+    top: 30px;
+  }
+  body .discover .discoverStatement img {
+    max-height: 250px;
+  }
+  body .discover .tiktok {
+    width: auto;
+    margin-left: 40px;
+    margin-top: 100px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 1/span 2;
+  }
+  body .footer {
+    display: grid;
   }
 }/*# sourceMappingURL=main.css.map */

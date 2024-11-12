@@ -229,15 +229,6 @@
           }
           
       }
-      .parallax{
-          display: none;
-          background-image: url(../images/background.jpg);
-          min-height: 500px;
-          background-attachment: fixed;
-          background-position: center;
-          background-repeat: no-repeat;
-          background-size: cover;
-      }
       .announcement{
         color: #fc8d5e;
           z-index: 2;
@@ -248,6 +239,9 @@
           }
           .rightToLeft{
               animation: RightToLeft 10s infinite linear;
+              .announcementSpan{
+                display: none;
+              }
           }
           @keyframes RightToLeft {
               from{
@@ -684,12 +678,72 @@
     }
 }
 
+/* Desktop Styles (>992px) */
 @media (min-width: 992px) {
     html{
-        width: 500px;
         margin: auto;
     }
-    .menu{
-        left: 0;
+    body{
+        .background{
+            .backgroundVid{
+                height: 100%;
+            }
+        }
+        .announcement{
+            .rightToLeft{
+                animation: RightToLeftDesktop 20s infinite linear;
+                .announcementSpan{
+                    display: inline;
+                }
+            @keyframes RightToLeftDesktop {
+                from{
+                    transform: translateX(10%);
+                }
+                to{
+                    transform: translateX(-200%);
+                }
+            }
+            }
+        }
+        .discover{
+            margin-top: -10px;
+            display: grid;
+            gap: 0px 80px;
+            grid-template-columns: 40% 60%;
+            .welcome{
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 2;
+                grid-row-end: 3;
+                width: 80%;
+                margin-top: 40px;
+            }
+            .discoverStatement{
+                width: 80%;
+                height: 450px;
+                grid-column-start: 2;
+                grid-column-end: 3;
+                grid-row-start: 1;
+                grid-row-end: 2;
+                .discoverText{
+                    top: 30px;
+                }
+                img{
+                    max-height: 250px;
+                }
+            }
+            .tiktok{
+                width: auto;
+                margin-left: 40px;
+                margin-top: 100px;
+                grid-column-start: 1;
+                grid-column-end: 2;
+                grid-row: 1 / span 2;
+            }
+        }
+        .footer{
+            display: grid;
+            
+        }
     }
-  }
+}
