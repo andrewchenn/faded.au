@@ -3,6 +3,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shop</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f127391619.js" crossorigin="anonymous"></script>
 </head>
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z7PC99BY7J"></script>
@@ -14,9 +20,61 @@
   gtag('config', 'G-Z7PC99BY7J');
 </script>
 <body>
-    <!-- Calendly inline widget begin -->
-    <div class="calendly-inline-widget" data-url="https://calendly.com/andrewnehc11/30min" style="min-width:320px;height:700px;"></div>
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-    <!-- Calendly inline widget end -->
+  <div class="mobileHeader">
+    <div class="menu" style="position: relative; background: black;">
+        <div class="toggle icon" onclick="showSidebar()"><i class="fa-solid fa-bars"></i></div>
+        <div class="logo" style="display: block;"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
+        <div class="contact icon" onclick="showSidebarContact()"><i class="fa-regular fa-message"></i></div>
+      </div>
+      <div class="mobileSidebar">
+        <button class="closeIcon" onclick="closeSidebar()"><i class="fa-solid fa-x"></i></button>
+        <button onclick="menuScroll(670)" class="mobileSidebarDiscover sidebarButton">DISCOVER</button>
+        <button onclick="menuScroll(2080)" class="mobileSidebarReviews sidebarButton">REVIEWS</button>
+        <button onclick="closeSidebar(), setTimeout(() => {showSidebarContact()}, 250);" class="sidebarButton">CONTACT</button>
+        <button onclick="menuScroll(2765)" class="mobileSidebarBookNow sidebarButton">BOOK NOW</button>
+        <center><div class="sidebarSocials">
+            <button class="instagram"><a href="https://www.instagram.com/faded.au/"><i class="fa-brands fa-instagram"></i></a></button>
+            <button class="tiktok"> <a href="https://www.tiktok.com/@shreyashh.k"><i class="fa-brands fa-tiktok"></i></a></button>
+        </div></center>
+      </div>
+
+      <div class="mobileSidebarContact">
+        <div class="closeContainer">
+            <button class="closeIcon" onclick="closeSidebarContact()"><i class="fa-solid fa-x"></i></button>
+        </div>
+        <div class="formContainer">
+            <form class="mobileContactForm" action="https://formsubmit.co/d62cd5ca398a5a6439fbeb3ce84c885c" method="POST">
+                <!--Honeypot-->
+                <input type="text" name="_honey" style="display: none;">
+                <!-- Disable Captcha  -->
+                 <input type="hidden" name="_captcha" value="false">
+                <h3 class="heading">CONTACT:</h3>
+                <label for="fname">Name:</label>
+                <input type="text" id="fname" name="First&nbsp;Name" placeholder="Your name..">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="Email" placeholder="Your email..">
+                <label for="phone">Phone:</label>
+                <input type="number" id="number" name="Phone&nbsp;Number" placeholder="Your phone number..">
+                <label for="subject">Message:</label>
+                <textarea id="subject" name="Subject" placeholder="Write something.." style="height:120px"></textarea>
+
+                <input type="submit" value="Submit">
+                <input type="hidden" name="_next" value="https://fadedstudio.com.au/success.html">
+            </form>
+            <center><div class="sidebarSocials">
+                <button class="instagram"><a href="https://www.instagram.com/faded.au/"><i class="fa-brands fa-instagram"></i></a></button>
+                <button class="tiktok"> <a href="https://www.tiktok.com/@shreyashh.k"><i class="fa-brands fa-tiktok"></i></a></button>
+            </div></center>
+        </div>
+      </div>
+  </div>
+  <div class="store" style="margin: 30px;">
+    <h1 style="text-align: center;">SHOP</h1>
+    <div id="my-store-107075011"></div>
+    <div>
+    <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?107075011&data_platform=code&data_date=2025-01-04" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-107075011");</script>
+    </div>
+  </div>
 </body>
 </html>
